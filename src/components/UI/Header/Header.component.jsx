@@ -49,9 +49,10 @@ export default Header;
 // Styled: HeaderContainer
 const HeaderContainer = styled.header`
   align-items: center;
-  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  background: ${(props) => props.theme.colors.header.backgroundPrimary};
   box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
   display: flex;
+  height: 8vh;
   justify-content: center;
   position: sticky;
   top: 0;
@@ -66,7 +67,7 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   padding: 10px 0;
   margin: auto;
-  width: 75%;
+  width: 95%;
 
   @media screen and (max-width: 1024px) {
     width: 85%;
@@ -80,7 +81,7 @@ const HeaderLeft = styled.div`
   justify-content: space-evenly;
 
   & p {
-    color: ${(props) => props.theme.colors.global.textPrimary};
+    color: ${(props) => props.theme.colors.header.textPrimary};
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -104,14 +105,13 @@ const HeaderRight = styled.div`
     transition: all 150ms linear;
 
     &:hover {
-      background-color: ${(props) =>
-        props.theme.colors.global.backgroundPrimary};
+      background: ${(props) => props.theme.colors.header.backgroundSecondary};
       transition: all 150ms linear;
     }
 
     & .MuiIconButton-label {
       & .MuiSvgIcon-root {
-        color: ${(props) => props.theme.colors.global.textPrimary};
+        color: ${(props) => props.theme.colors.header.textSecondary};
         transition: all 150ms linear;
       }
     }

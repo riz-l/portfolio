@@ -1,7 +1,6 @@
 // Import: Dependencies
 import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import styled from "styled-components";
 
 // Import: Themes
 import lightTheme from "./themes/lightTheme";
@@ -10,7 +9,7 @@ import darkTheme from "./themes/darkTheme";
 // Import: UI
 import Header from "./components/UI/Header/Header.component";
 
-// Import: pages
+// Import: page
 import Home from "./components/pages/Home/Home.component";
 
 // Component: App
