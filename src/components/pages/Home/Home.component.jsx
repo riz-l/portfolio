@@ -73,13 +73,14 @@ const HomeTextContainer = styled.div`
     font-weight: 600;
     letter-spacing: 1.2rem;
     padding-bottom: 2rem;
-    text-transform: lowercase;
+    text-transform: uppercase;
   }
 
   & h2 {
     color: ${(props) => props.theme.colors.header.backgroundSecondary};
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 300;
-    text-transform: lowercase;
+    letter-spacing: 4px;
+    text-transform: uppercase;
   }
 `;
