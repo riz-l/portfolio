@@ -15,9 +15,7 @@ function Header({ isDarkTheme, setIsDarkTheme }) {
   return (
     <HeaderContainer>
       <HeaderWrapper>
-        <HeaderLeft>
-          <p>Riz</p>
-        </HeaderLeft>
+        <HeaderLeft></HeaderLeft>
 
         <HeaderCenter></HeaderCenter>
 
@@ -79,14 +77,6 @@ const HeaderLeft = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-
-  & p {
-    color: ${(props) => props.theme.colors.header.textPrimary};
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: lowercase;
-  }
 `;
 
 // Styled: HeaderCenter

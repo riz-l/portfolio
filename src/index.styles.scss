@@ -23,14 +23,15 @@ code {
     monospace;
 }
 
-/* ::-moz-selection {
-  background: #181818;
+::-moz-selection {
+  background: #ff5851;
   color: #f7f7f7;
 }
 ::selection {
-  background: #181818;
+  background: #ff5851;
   color: #f7f7f7;
-} */
+}
+
 /*#endregion /Default: React */
 
 /*#region Native Styling */
