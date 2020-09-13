@@ -3,7 +3,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // page: Home
-function Home({ isDarkTheme, setIsDarkTheme }) {
+function Home() {
   return (
     <HomeContainer>
       <HomeSplash>

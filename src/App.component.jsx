@@ -54,7 +54,7 @@ function App() {
     <React.Fragment>
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <Header isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
-        <Home isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
+        <Home />
       </ThemeProvider>
     </React.Fragment>
   );
