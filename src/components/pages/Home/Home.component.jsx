@@ -48,6 +48,7 @@ const HomeSplash = styled.div`
   );
   background-size: 400% 400%;
   height: 80vh;
+  min-height: 750px;
   position: relative;
   transition: all 150s linear;
 `;

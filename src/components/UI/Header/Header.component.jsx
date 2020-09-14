@@ -2,6 +2,9 @@
 import React from "react";
 import styled from "styled-components";
 
+// Import: Assets
+import Switch from "../Switch/Switch.component";
+
 // Import: Material UI Icons
 import MenuIcon from "@material-ui/icons/Menu";
 import Brightness2Icon from "@material-ui/icons/Brightness2";
@@ -15,25 +18,27 @@ function Header({ isDarkTheme, setIsDarkTheme }) {
   return (
     <HeaderContainer>
       <HeaderWrapper>
-        <HeaderLeft></HeaderLeft>
-
-        <HeaderCenter></HeaderCenter>
-
-        <HeaderRight>
-          <IconButton
-            onClick={() => {
+        <HeaderLeft>
+          <HeaderToggleLight>Light</HeaderToggleLight>
+          <Switch
+            isOn={isDarkTheme}
+            handleToggle={() => {
               setIsDarkTheme((isDarkTheme) => !isDarkTheme);
               localStorage.setItem(
                 "isDarkTheme",
                 (isDarkTheme) => !isDarkTheme
               );
             }}
-          >
-            {isDarkTheme ? <Brightness2Icon /> : <WbSunnyIcon />}
-          </IconButton>
+            onColor="#06d6A0"
+          />
+          <HeaderToggleDark>Dark</HeaderToggleDark>
+        </HeaderLeft>
 
+        <HeaderCenter></HeaderCenter>
+
+        <HeaderRight>
           <IconButton>
-            <MenuIcon />
+            <MenuIcon fontSize="large" />
           </IconButton>
         </HeaderRight>
       </HeaderWrapper>
@@ -63,7 +68,6 @@ const HeaderWrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
   margin: auto;
   width: 95%;
 
@@ -77,6 +81,22 @@ const HeaderLeft = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+`;
+
+// Styled: HeaderToggleLight
+const HeaderToggleLight = styled.span`
+  color: ${(props) => props.theme.colors.header.textSecondary};
+  letter-spacing: 1px;
+  margin-right: 10px;
+  text-transform: uppercase;
+`;
+
+// Styled: HeaderToggleDark
+const HeaderToggleDark = styled.span`
+  color: ${(props) => props.theme.colors.header.textSecondary};
+  letter-spacing: 1px;
+  margin-left: 10px;
+  text-transform: uppercase;
 `;
 
 // Styled: HeaderCenter
