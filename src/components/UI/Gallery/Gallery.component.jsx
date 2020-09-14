@@ -12,7 +12,7 @@ function Gallery() {
       <GalleryItem>
         <GalleryCard
           cardImage="https://images.unsplash.com/photo-1502740479091-635887520276?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80"
-          cardText="OneResponse / Management"
+          cardText="OneResponse"
           cardTitle="Toy ambulance on gray wood"
         />
       </GalleryItem>
@@ -57,9 +57,11 @@ export default Gallery;
 
 // Styled: GalleryContainer
 const GalleryContainer = styled.div`
+  align-items: center;
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 auto;
+  margin: 1rem;
   max-width: 100%;
 
   @media screen and (max-width: 800px) {
@@ -69,15 +71,14 @@ const GalleryContainer = styled.div`
 
 // Styled: GalleryItem
 const GalleryItem = styled.div`
-  color: white;
-  margin: 1rem;
+  height: 350px;
   max-height: 350px;
   min-height: 350px;
-  padding: 1rem;
 
   @media screen and (min-width: 800px) {
     &:last-child {
       grid-column: span 2;
+      height: 350px;
       max-height: 350px;
       min-height: 350px;
     }
