@@ -2,6 +2,9 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
+// Import: UI
+import Gallery from "../../UI/Gallery/Gallery.component";
+
 // page: Home
 function Home() {
   return (
@@ -12,6 +15,12 @@ function Home() {
           <h2>Web &amp; App Developer</h2>
         </HomeTextContainer>
       </HomeSplash>
+
+      <HomePortfolioContainer>
+        <HomePortfolio>
+          <Gallery></Gallery>
+        </HomePortfolio>
+      </HomePortfolioContainer>
     </HomeContainer>
   );
 }
@@ -22,9 +31,9 @@ export default Home;
 // Styled: HomeContainer
 const HomeContainer = styled.main`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
-  min-height: 92vh;
-  padding-bottom: 4rem;
+  height: 100%;
   transition: all 150ms linear;
+  width: 100%;
 `;
 
 // Styled: homeGradient
@@ -34,7 +43,7 @@ const homeGradient = keyframes`
     100% {background-position: 0 50%};
 `;
 
-// Styled: HomeSplash
+// Styled: HomeSplashs
 const HomeSplash = styled.div`
   animation-duration: 10s;
   animation-name: ${homeGradient};
@@ -61,8 +70,9 @@ const HomeTextContainer = styled.div`
   height: 100%;
   justify-content: center;
   margin: auto;
+  text-align: center;
   transition: all 150ms linear;
-  width: 95%;
+  width: 70%;
 
   @media screen and (max-width: 1024px) {
     width: 85%;
@@ -75,6 +85,31 @@ const HomeTextContainer = styled.div`
     letter-spacing: 1.2rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1536px) {
+      font-size: 8rem;
+    }
+
+    @media screen and (max-width: 1284px) {
+      font-size: 6rem;
+    }
+
+    @media screen and (max-width: 1030px) {
+      font-size: 5.8rem;
+    }
+
+    @media screen and (max-width: 830px) {
+      font-size: 5rem;
+    }
+
+    @media screen and (max-width: 746px) {
+      font-size: 4rem;
+      padding-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 406px) {
+      font-size: 3rem;
+    }
   }
 
   & h2 {
@@ -83,5 +118,40 @@ const HomeTextContainer = styled.div`
     font-weight: 300;
     letter-spacing: 4px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 830px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 642px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 406px) {
+      font-size: 1rem;
+    }
+  }
+`;
+
+// Styled: HomePortfolioContainer
+const HomePortfolioContainer = styled.div`
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
+  min-height: 140vh;
+  width: 100%;
+`;
+
+// Styled: HomePortfolio
+const HomePortfolio = styled.section`
+  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  left: 0;
+  margin: auto;
+  min-height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 775px;
+  width: 70%;
+
+  @media screen and (max-width: 1024px) {
+    width: 85%;
   }
 `;

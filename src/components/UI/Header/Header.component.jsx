@@ -7,8 +7,6 @@ import Switch from "../Switch/Switch.component";
 
 // Import: Material UI Icons
 import MenuIcon from "@material-ui/icons/Menu";
-import Brightness2Icon from "@material-ui/icons/Brightness2";
-import WbSunnyIcon from "@material-ui/icons/WbSunny";
 
 // Import: Material Core
 import { IconButton } from "@material-ui/core";
@@ -69,7 +67,7 @@ const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 95%;
+  width: 70%;
 
   @media screen and (max-width: 1024px) {
     width: 85%;

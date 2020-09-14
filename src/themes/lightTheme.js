@@ -1,8 +1,8 @@
 export default {
   colors: {
     global: {
-      backgroundPrimary: "#ffffff",
-      backgroundSecondary: "#f7f7f7",
+      backgroundPrimary: "#f7f7f7",
+      backgroundSecondary: "#ffffff",
       textPrimary: "#202020",
       textSecondary: "#282828",
       highlightPrimary: "#ff5851",

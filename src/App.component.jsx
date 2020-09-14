@@ -1,6 +1,6 @@
 // Import: Dependencies
 import React, { useState, useEffect } from "react";
-import { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 
 // Import: Themes
 import lightTheme from "./themes/lightTheme";
@@ -53,8 +53,10 @@ function App() {
   return (
     <>
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-        <Header isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
-        <Home />
+        <AppContainer>
+          <Header isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
+          <Home />
+        </AppContainer>
       </ThemeProvider>
     </>
   );
@@ -62,3 +64,10 @@ function App() {
 
 // Export: App
 export default App;
+
+// Styled: AppContainer
+const AppContainer = styled.div`
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
+  height: 100%;
+  width: 100%;
+`;
