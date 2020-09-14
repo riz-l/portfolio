@@ -67,7 +67,6 @@ export default App;
 
 // Styled: AppContainer
 const AppContainer = styled.div`
-  background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: 100%;
   width: 100%;
 `;

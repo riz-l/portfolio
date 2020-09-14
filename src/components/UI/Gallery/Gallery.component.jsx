@@ -2,28 +2,51 @@
 import React from "react";
 import styled from "styled-components";
 
+// Import: UI
+import GalleryCard from "../GalleryCard/GalleryCard.component";
+
 // UI: Gallery
 function Gallery() {
   return (
     <GalleryContainer>
       <GalleryItem>
-        <p>OneResponse / Management</p>
+        <GalleryCard
+          cardImage="https://images.unsplash.com/photo-1502740479091-635887520276?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80"
+          cardText="OneResponse / Management"
+          cardTitle="Toy ambulance on gray wood"
+        />
       </GalleryItem>
 
       <GalleryItem>
-        <p>Rizji</p>
+        <GalleryCard
+          cardImage="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+          cardText="Rizji"
+          cardTitle="Retro gaming technology"
+        />
       </GalleryItem>
 
       <GalleryItem>
-        <p>Acronym Search</p>
+        <GalleryCard
+          cardImage="https://images.unsplash.com/photo-1580028468862-6895981d7a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          cardText="Acronym Search"
+          cardTitle="Eurofighter Typhoon jet taking off"
+        />
       </GalleryItem>
 
       <GalleryItem>
-        <p>Keyboard Shop</p>
+        <GalleryCard
+          cardImage="https://images.unsplash.com/photo-1595225476474-87563907a212?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+          cardText="Keyboard Shop"
+          cardTitle="Decorative mechanical keyboard and switch"
+        />
       </GalleryItem>
 
       <GalleryItem>
-        <p>Personal Website</p>
+        <GalleryCard
+          cardImage="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+          cardText="Personal Website"
+          cardTitle="Phone, notebook, pencil, glasses and laptop"
+        />
       </GalleryItem>
     </GalleryContainer>
   );
@@ -46,7 +69,6 @@ const GalleryContainer = styled.div`
 
 // Styled: GalleryItem
 const GalleryItem = styled.div`
-  background-color: dodgerblue;
   color: white;
   margin: 1rem;
   max-height: 350px;
@@ -56,6 +78,8 @@ const GalleryItem = styled.div`
   @media screen and (min-width: 800px) {
     &:last-child {
       grid-column: span 2;
+      max-height: 350px;
+      min-height: 350px;
     }
   }
 `;

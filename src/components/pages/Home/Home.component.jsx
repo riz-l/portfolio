@@ -18,7 +18,7 @@ function Home() {
 
       <HomePortfolioContainer>
         <HomePortfolio>
-          <Gallery></Gallery>
+          <Gallery />
         </HomePortfolio>
       </HomePortfolioContainer>
     </HomeContainer>
@@ -136,7 +136,8 @@ const HomeTextContainer = styled.div`
 // Styled: HomePortfolioContainer
 const HomePortfolioContainer = styled.div`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
-  min-height: 140vh;
+  height: 2400px;
+  position: relative;
   width: 100%;
 `;
 
@@ -145,10 +146,10 @@ const HomePortfolio = styled.section`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
   left: 0;
   margin: auto;
-  min-height: 100vh;
+  height: auto;
   position: absolute;
   right: 0;
-  top: 775px;
+  top: -50px;
   width: 70%;
 
   @media screen and (max-width: 1024px) {
