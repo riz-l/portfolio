@@ -57,7 +57,7 @@ const HomeSplash = styled.div`
   );
   background-size: 400% 400%;
   height: 80vh;
-  min-height: 750px;
+  min-height: 700px;
   position: relative;
   transition: all 150s linear;
 `;
@@ -138,6 +138,7 @@ const HomePortfolioContainer = styled.div`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: 2400px;
   position: relative;
+  transition: all 150ms linear;
   width: 100%;
 `;
 
@@ -150,6 +151,7 @@ const HomePortfolio = styled.section`
   position: absolute;
   right: 0;
   top: -50px;
+  transition: all 150ms linear;
   width: 70%;
 
   @media screen and (max-width: 1024px) {

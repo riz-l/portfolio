@@ -1,4 +1,3 @@
-import { ContactsOutlined } from "@material-ui/icons";
 // Import: Dependencies
 import React from "react";
 import styled from "styled-components";
