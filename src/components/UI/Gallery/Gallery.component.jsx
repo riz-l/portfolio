@@ -16,7 +16,6 @@ function Gallery() {
           cardImage="https://images.unsplash.com/photo-1502740479091-635887520276?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80"
         />
       </GalleryItem>
-
       <GalleryItem>
         <GalleryCard
           cardText="Acronym Search"
@@ -24,7 +23,6 @@ function Gallery() {
           cardImage="https://images.unsplash.com/photo-1580028468862-6895981d7a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         />
       </GalleryItem>
-
       <GalleryItem>
         <GalleryCard
           cardText="Rizji"
@@ -32,7 +30,6 @@ function Gallery() {
           cardImage="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
         />
       </GalleryItem>
-
       <GalleryItem>
         <GalleryCard
           cardText="Keyboard Shop"
@@ -40,7 +37,6 @@ function Gallery() {
           cardImage="https://images.unsplash.com/photo-1595225476474-87563907a212?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
         />
       </GalleryItem>
-
       <GalleryItem>
         <GalleryCard
           cardText="Portfolio Website"
@@ -61,8 +57,9 @@ const GalleryContainer = styled.div`
   display: grid;
   grid-gap: 1.6rem;
   grid-template-columns: repeat(2, 1fr);
-  margin: 1.6rem;
-  max-width: 100%;
+  height: 100%;
+  padding: 1.6rem;
+  width: 100%;
 
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
@@ -72,8 +69,6 @@ const GalleryContainer = styled.div`
 // Styled: GalleryItem
 const GalleryItem = styled.div`
   height: 350px;
-  max-height: 350px;
-  min-height: 350px;
 
   @media screen and (min-width: 800px) {
     &:last-child {
