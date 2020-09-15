@@ -25,7 +25,7 @@ const GalleryCardContainer = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(0.9) saturate(95%);
+  filter: brightness(0.8) saturate(90%);
   height: 100%;
   transition: all 300ms ease-in-out;
   width: 100%;
@@ -55,11 +55,14 @@ const GalleryCardText = styled.p`
   padding: 1rem 2rem;
   text-align: center;
   text-transform: uppercase;
-  transition: all 150ms linear;
+  transition: background 150ms linear, color 150ms linear,
+    border-radius 300ms linear;
 
   &:hover {
     background: ${(props) => props.theme.colors.global.backgroundSecondary};
+    border-radius: 80px;
     color: ${(props) => props.theme.colors.global.highlightPrimary};
-    transition: all 150ms linear;
+    transition: background 150ms linear, color 150ms linear,
+      border-radius 300ms linear;
   }
 `;
