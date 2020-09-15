@@ -18,7 +18,7 @@ function Header({ isDarkTheme, setIsDarkTheme }) {
       <HeaderWrapper>
         <HeaderLeft>
           <HeaderToggleLight>Light</HeaderToggleLight>
-          <div style={{ transform: "scale(0.65)" }}>
+          <HeaderToggleScale>
             <Switch
               isOn={isDarkTheme}
               handleToggle={() => {
@@ -30,7 +30,7 @@ function Header({ isDarkTheme, setIsDarkTheme }) {
               }}
               onColor="#06d6A0"
             />
-          </div>
+          </HeaderToggleScale>
           <HeaderToggleDark>Dark</HeaderToggleDark>
         </HeaderLeft>
 
@@ -81,6 +81,11 @@ const HeaderLeft = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+`;
+
+// Styled: HeaderToggleScale
+const HeaderToggleScale = styled.div`
+  transform: scale(0.65);
 `;
 
 // Styled: HeaderToggleLight

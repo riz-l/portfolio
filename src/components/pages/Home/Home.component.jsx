@@ -43,7 +43,7 @@ const homeGradient = keyframes`
     100% {background-position: 0 50%};
 `;
 
-// Styled: HomeSplashs
+// Styled: HomeSplash
 const HomeSplash = styled.div`
   animation-duration: 10s;
   animation-name: ${homeGradient};
