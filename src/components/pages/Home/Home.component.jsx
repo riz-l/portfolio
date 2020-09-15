@@ -8,20 +8,19 @@ import Gallery from "../../UI/Gallery/Gallery.component";
 // page: Home
 function Home() {
   return (
-    <HomeContainer>
-      <HomeSplash>
-        <HomeTextContainer>
-          <h1>Riz Layton</h1>
-          <h2>Web &amp; App Developer</h2>
-        </HomeTextContainer>
-      </HomeSplash>
+    <>
+      <HomeContainer>
+        <HomeSplash>
+          <HomeTextContainer>
+            <h1>Riz Layton</h1>
+            <h2>Web &amp; App Developer</h2>
+          </HomeTextContainer>
+        </HomeSplash>
 
-      <HomeGalleryContainer>
-        <HomeGalleryWrapper>
-          <Gallery />
-        </HomeGalleryWrapper>
-      </HomeGalleryContainer>
-    </HomeContainer>
+        <Gallery />
+      </HomeContainer>
+      <HomeAboutContainer></HomeAboutContainer>
+    </>
   );
 }
 
@@ -34,6 +33,8 @@ const HomeContainer = styled.main`
   height: auto;
   transition: all 150ms linear;
   width: 100%;
+
+  position: relative;
 `;
 
 // Styled: homeGradient
@@ -135,28 +136,10 @@ const HomeTextContainer = styled.div`
   }
 `;
 
-// Styled: HomeGalleryContainer
-const HomeGalleryContainer = styled.div`
+// Styled: HomeAboutContainer
+const HomeAboutContainer = styled.div`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
-  height: auto;
+  min-height: 260vh;
   transition: all 150ms linear;
   width: 100%;
-`;
-
-// Styled: HomeGalleryWrapper
-const HomeGalleryWrapper = styled.div`
-  align-items: center;
-  background: ${(props) => props.theme.colors.global.backgroundSecondary};
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  margin: auto;
-  text-align: center;
-  transition: all 150ms linear;
-  width: 70%;
-
-  @media screen and (max-width: 1024px) {
-    width: 85%;
-  }
 `;

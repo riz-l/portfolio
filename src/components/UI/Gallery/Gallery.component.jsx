@@ -54,21 +54,32 @@ export default Gallery;
 // Styled: GalleryContainer
 const GalleryContainer = styled.div`
   align-items: center;
+  background: ${(props) => props.theme.colors.global.backgroundSecondary};
   display: grid;
   grid-gap: 1.6rem;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  height: auto;
+  left: 0;
+  margin: auto;
   padding: 1.6rem;
-  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 95%;
+  transition: all 150ms linear;
+  width: 70%;
 
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 85%;
   }
 `;
 
 // Styled: GalleryItem
 const GalleryItem = styled.div`
-  height: 350px;
+  height: 300px;
 
   @media screen and (min-width: 800px) {
     &:last-child {
