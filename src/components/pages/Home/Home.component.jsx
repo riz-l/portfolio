@@ -3,6 +3,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // Import: UI
+import Footer from "../../UI/Footer/Footer.component";
 import Gallery from "../../UI/Gallery/Gallery.component";
 
 // page: Home
@@ -19,7 +20,10 @@ function Home() {
 
         <Gallery />
       </HomeContainer>
+
       <HomeAboutContainer></HomeAboutContainer>
+
+      <Footer />
     </>
   );
 }
