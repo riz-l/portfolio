@@ -38,10 +38,11 @@ const GalleryCardContainer = styled.div`
 
 // Styled: GalleryCardTextContainer
 const GalleryCardTextContainer = styled.div`
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   height: 100%;
   justify-content: center;
+  padding-bottom: 1.6rem;
   width: 100%;
 `;
 

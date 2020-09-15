@@ -14,5 +14,10 @@ export default {
       textPrimary: "#ffffff",
       textSecondary: "#f7f7f7",
     },
+    homeGradient: {
+      gradientPrimary: "#ff5851",
+      gradientSecondary: "#86a8e7",
+      gradientTertiary: "#5ffbf1",
+    },
   },
 };

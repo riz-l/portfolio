@@ -51,15 +51,15 @@ const HomeSplash = styled.div`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
   background: linear-gradient(
     -45deg,
-    ${(props) => props.theme.colors.global.highlightPrimary} 15%,
-    #86a8e7,
-    #5ffbf1
+    ${(props) => props.theme.colors.homeGradient.gradientPrimary} 15%,
+    ${(props) => props.theme.colors.homeGradient.gradientSecondary},
+    ${(props) => props.theme.colors.homeGradient.gradientTertiary}
   );
   background-size: 400% 400%;
   height: 80vh;
   min-height: 700px;
   position: relative;
-  transition: all 150s linear;
+  transition: all 350ms ease-in-out;
 `;
 
 // Styled: HomeTextContainer
@@ -79,12 +79,13 @@ const HomeTextContainer = styled.div`
   }
 
   & h1 {
-    color: ${(props) => props.theme.colors.header.backgroundPrimary};
+    color: ${(props) => props.theme.colors.global.backgroundPrimary};
     font-size: 10rem;
     font-weight: 600;
     letter-spacing: 1.2rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
+    transition: all 150ms linear;
 
     @media screen and (max-width: 1536px) {
       font-size: 8rem;
@@ -113,11 +114,12 @@ const HomeTextContainer = styled.div`
   }
 
   & h2 {
-    color: ${(props) => props.theme.colors.header.backgroundSecondary};
+    color: ${(props) => props.theme.colors.global.backgroundSecondary};
     font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 4px;
     text-transform: uppercase;
+    transition: all 150ms linear;
 
     @media screen and (max-width: 830px) {
       font-size: 2rem;
