@@ -11,8 +11,8 @@ export default {
     header: {
       backgroundPrimary: "#202020",
       backgroundSecondary: "#282828",
-      textPrimary: "#ffffff",
-      textSecondary: "#f7f7f7",
+      textPrimary: "#f7f7f7",
+      textSecondary: "#ebebeb",
     },
     homeGradient: {
       gradientPrimary: "#ff5851",

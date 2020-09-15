@@ -25,6 +25,7 @@ const GalleryCardContainer = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
   filter: brightness(0.8) saturate(90%);
   height: 100%;
   transition: all 300ms ease-in-out;

@@ -21,6 +21,16 @@ function Home() {
           <Gallery />
         </HomePortfolio>
       </HomePortfolioContainer>
+
+      <HomeAboutContainer>
+        <HomeAbout>
+          <h3>About me</h3>
+          <p>
+            I'm a website and application developer currently working for DXC
+            Technology in England, UK.
+          </p>
+        </HomeAbout>
+      </HomeAboutContainer>
     </HomeContainer>
   );
 }
@@ -138,7 +148,7 @@ const HomeTextContainer = styled.div`
 // Styled: HomePortfolioContainer
 const HomePortfolioContainer = styled.div`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
-  height: 2400px;
+  height: 1050px;
   position: relative;
   transition: all 150ms linear;
   width: 100%;
@@ -147,9 +157,9 @@ const HomePortfolioContainer = styled.div`
 // Styled: HomePortfolio
 const HomePortfolio = styled.section`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  height: auto;
   left: 0;
   margin: auto;
-  height: auto;
   position: absolute;
   right: 0;
   top: -50px;
@@ -158,5 +168,41 @@ const HomePortfolio = styled.section`
 
   @media screen and (max-width: 1024px) {
     width: 85%;
+  }
+`;
+
+// Styled: HomeAboutContainer
+const HomeAboutContainer = styled.div`
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
+  min-height: auto;
+  width: 100%;
+`;
+
+// Styled: HomeAbout
+const HomeAbout = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 14rem 0;
+  text-align: center;
+  width: 70%;
+
+  @media screen and (max-width: 1024px) {
+    width: 85%;
+  }
+
+  & h3 {
+    color: ${(props) => props.theme.colors.global.textSecondary};
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  & p {
+    color: ${(props) => props.theme.colors.global.textPrimary};
+    font-size: 1.4rem;
+    padding: 1rem 0;
   }
 `;
