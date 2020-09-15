@@ -1,24 +1,27 @@
+import { ContactsOutlined } from "@material-ui/icons";
 // Import: Dependencies
 import React from "react";
 import styled from "styled-components";
 
-// UI: GCard
-function GCard({ cardImage, cardText, cardTitle }) {
+// UI: GalleryCard
+function GalleryCard({ cardImage, cardText, cardTitle }) {
   return (
-    <GCardContainer
+    <GalleryCardContainer
       style={{ backgroundImage: `url(${cardImage})` }}
       title={cardTitle}
     >
-      <p>{cardText}</p>
-    </GCardContainer>
+      <GalleryCardTextContainer>
+        <GalleryCardText>{cardText}</GalleryCardText>
+      </GalleryCardTextContainer>
+    </GalleryCardContainer>
   );
 }
 
-// Export: GCard
-export default GCard;
+// Export: GalleryCard
+export default GalleryCard;
 
-// Styled: GCardContainer
-const GCardContainer = styled.div`
+// Styled: GalleryCardContainer
+const GalleryCardContainer = styled.div`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
   background-position: center;
   background-repeat: no-repeat;
@@ -31,5 +34,33 @@ const GCardContainer = styled.div`
   &:hover {
     filter: brightness(1) saturate(100%);
     transition: all 300ms ease-in-out;
+  }
+`;
+
+// Styled: GalleryCardTextContainer
+const GalleryCardTextContainer = styled.div`
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+`;
+
+// Styled: GalleryCardText
+const GalleryCardText = styled.p`
+  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  color: ${(props) => props.theme.colors.global.textPrimary};
+  cursor: pointer;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 150ms linear;
+
+  &:hover {
+    background: ${(props) => props.theme.colors.global.backgroundSecondary};
+    color: ${(props) => props.theme.colors.global.highlightPrimary};
+    transition: all 150ms linear;
   }
 `;
