@@ -79,14 +79,11 @@ const GalleryContainer = styled.div`
 
 // Styled: GalleryItem
 const GalleryItem = styled.div`
-  height: 300px;
+  height: 40vh;
 
   @media screen and (min-width: 800px) {
     &:last-child {
       grid-column: span 2;
-      height: 350px;
-      max-height: 350px;
-      min-height: 350px;
     }
   }
 `;
