@@ -26,14 +26,14 @@ const GalleryCardContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  filter: saturate(60%);
+  filter: brightness(95%) saturate(70%);
   height: 100%;
   position: relative;
   transition: all 300ms ease-in-out;
   width: 100%;
 
   &:hover {
-    filter: saturate(100%);
+    filter: brightness(100%) saturate(100%);
     transition: all 300ms ease-in-out;
   }
 `;

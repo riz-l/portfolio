@@ -17,11 +17,10 @@ function Home() {
             <h2>Web &amp; App Developer</h2>
           </HomeTextContainer>
         </HomeSplash>
+        <HomeAboutContainer></HomeAboutContainer>
 
         <Gallery />
       </HomeContainer>
-
-      <HomeAboutContainer></HomeAboutContainer>
 
       <Footer />
     </>
@@ -35,10 +34,9 @@ export default Home;
 const HomeContainer = styled.main`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
   height: auto;
+  position: relative;
   transition: all 150ms linear;
   width: 100%;
-
-  position: relative;
 `;
 
 // Styled: homeGradient
@@ -62,7 +60,6 @@ const HomeSplash = styled.div`
   );
   background-size: 400% 400%;
   height: 80vh;
-  min-height: 700px;
   position: relative;
   transition: all 350ms ease-in-out;
 `;

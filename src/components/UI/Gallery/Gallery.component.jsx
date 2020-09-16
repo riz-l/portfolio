@@ -64,7 +64,7 @@ const GalleryContainer = styled.div`
   padding: 1.6rem;
   position: absolute;
   right: 0;
-  top: 95%;
+  top: 75vh;
   transition: all 150ms linear;
   width: 70%;
 
