@@ -59,12 +59,8 @@ const GalleryContainer = styled.div`
   grid-gap: 1.6rem;
   grid-template-columns: repeat(2, 1fr);
   height: auto;
-  left: 0;
   margin: auto;
   padding: 1.6rem;
-  position: absolute;
-  right: 0;
-  top: 75vh;
   transition: all 150ms linear;
   width: 70%;
 

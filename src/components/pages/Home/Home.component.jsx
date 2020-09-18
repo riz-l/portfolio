@@ -17,9 +17,10 @@ function Home() {
             <h2>Web &amp; App Developer</h2>
           </HomeTextContainer>
         </HomeSplash>
-        <HomeAboutContainer></HomeAboutContainer>
 
-        <Gallery />
+        <HomeGalleryContainer>
+          <Gallery />
+        </HomeGalleryContainer>
       </HomeContainer>
 
       <Footer />
@@ -32,7 +33,7 @@ export default Home;
 
 // Styled: HomeContainer
 const HomeContainer = styled.main`
-  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: auto;
   position: relative;
   transition: all 150ms linear;
@@ -60,7 +61,6 @@ const HomeSplash = styled.div`
   );
   background-size: 400% 400%;
   height: 80vh;
-  position: relative;
   transition: all 350ms ease-in-out;
 `;
 
@@ -137,10 +137,7 @@ const HomeTextContainer = styled.div`
   }
 `;
 
-// Styled: HomeAboutContainer
-const HomeAboutContainer = styled.div`
-  background: ${(props) => props.theme.colors.global.backgroundPrimary};
-  min-height: 260vh;
-  transition: all 150ms linear;
-  width: 100%;
+// Styled: HomeGalleryContainer
+const HomeGalleryContainer = styled.div`
+  padding: 3.2rem 0;
 `;
