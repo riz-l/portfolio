@@ -82,7 +82,7 @@ const HomeTextContainer = styled.div`
 
   & h1 {
     color: ${(props) => props.theme.colors.global.backgroundPrimary};
-    font-size: 10rem;
+    font-size: 6rem;
     font-weight: 600;
     letter-spacing: 1.2rem;
     padding-bottom: 2rem;
