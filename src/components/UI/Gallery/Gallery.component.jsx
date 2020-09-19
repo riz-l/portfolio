@@ -52,7 +52,7 @@ function Gallery() {
 export default Gallery;
 
 // Styled: GalleryContainer
-const GalleryContainer = styled.div`
+const GalleryContainer = styled.section`
   align-items: center;
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
   display: grid;
@@ -74,7 +74,7 @@ const GalleryContainer = styled.div`
 `;
 
 // Styled: GalleryItem
-const GalleryItem = styled.div`
+const GalleryItem = styled.article`
   height: 40vh;
 
   @media screen and (min-width: 800px) {

@@ -1,6 +1,6 @@
 // Import: Dependencies
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // UI: GalleryCard
 function GalleryCard({ cardImage, cardText, cardTitle }) {
@@ -19,8 +19,17 @@ function GalleryCard({ cardImage, cardText, cardTitle }) {
 // Export: GalleryCard
 export default GalleryCard;
 
+// Styled: galleryCardFadeIn
+const galleryCardFadeIn = keyframes`
+    0% {opacity: 0; transform: translateY(-20px)};
+    100% {opacity: 1; transform: translateY(0)};
+`;
+
 // Styled: GalleryCardContainer
 const GalleryCardContainer = styled.div`
+  animation-duration: 1.5s;
+  animation-name: ${galleryCardFadeIn};
+  animation-iteration-count: 1;
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
   background-position: center;
   background-repeat: no-repeat;

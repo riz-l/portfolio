@@ -21,9 +21,9 @@ function Home() {
         <HomeGalleryContainer>
           <Gallery />
         </HomeGalleryContainer>
-      </HomeContainer>
 
-      <Footer />
+        <Footer />
+      </HomeContainer>
     </>
   );
 }
@@ -60,18 +60,20 @@ const HomeSplash = styled.div`
     ${(props) => props.theme.colors.homeGradient.gradientTertiary}
   );
   background-size: 400% 400%;
-  height: 80vh;
+  height: 84vh;
+  padding-bottom: 18rem;
   transition: all 350ms ease-in-out;
 `;
 
 // Styled: HomeTextContainer
-const HomeTextContainer = styled.div`
+const HomeTextContainer = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
   margin: auto;
+  padding-top: 18rem;
   text-align: center;
   transition: all 150ms linear;
   width: 70%;
@@ -89,16 +91,8 @@ const HomeTextContainer = styled.div`
     text-transform: uppercase;
     transition: all 150ms linear;
 
-    @media screen and (max-width: 1536px) {
-      font-size: 8rem;
-    }
-
-    @media screen and (max-width: 1284px) {
-      font-size: 6rem;
-    }
-
     @media screen and (max-width: 1030px) {
-      font-size: 5.8rem;
+      font-size: 5.5rem;
     }
 
     @media screen and (max-width: 830px) {
@@ -139,5 +133,6 @@ const HomeTextContainer = styled.div`
 
 // Styled: HomeGalleryContainer
 const HomeGalleryContainer = styled.div`
+  margin-top: -8rem;
   padding: 3.2rem 0;
 `;
