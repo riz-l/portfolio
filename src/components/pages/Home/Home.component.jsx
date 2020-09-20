@@ -163,7 +163,7 @@ const HomeTextCTA = styled.div`
   & span {
     font-size: 1.4rem;
     letter-spacing: 1px;
-    margin-right: 1rem;
+    margin-right: 10px;
     text-transform: uppercase;
   }
 `;
