@@ -15,14 +15,9 @@ export default {
       textSecondary: "#ebebeb",
     },
     homeGradient: {
-      gradientPrimary: "#f9f871",
+      gradientPrimary: "#6d5e90",
       gradientSecondary: "#e67a91",
-      gradientTertiary: "#6d5e90",
+      gradientTertiary: "#f9f871",
     },
-    // homeGradient: {
-    //   gradientPrimary: "#ff5851",
-    //   gradientSecondary: "#86a8e7",
-    //   gradientTertiary: "#5ffbf1",
-    // },
   },
 };

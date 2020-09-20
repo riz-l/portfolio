@@ -9,6 +9,7 @@ function Footer() {
       <FooterWrapper>
         <FooterHeader>
           <FooterHeaderText>Riz Layton</FooterHeaderText>
+          <FooterHeaderCTA>Contact me</FooterHeaderCTA>
         </FooterHeader>
       </FooterWrapper>
     </FooterContainer>
@@ -20,7 +21,7 @@ export default Footer;
 
 // Styled: FooterContainer
 const FooterContainer = styled.footer`
-  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: 40vh;
   transition: all 150ms linear;
   width: 100%;
