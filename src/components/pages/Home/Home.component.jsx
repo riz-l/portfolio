@@ -2,6 +2,9 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
+// Import: Material UI Icons
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
 // Import: UI
 import Footer from "../../UI/Footer/Footer.component";
 import Gallery from "../../UI/Gallery/Gallery.component";
@@ -15,6 +18,11 @@ function Home() {
           <HomeTextContainer>
             <h1>Riz Layton</h1>
             <h2>Web &amp; App Developer</h2>
+
+            <HomeTextCTA>
+              <span>My work</span>
+              <ExpandMoreIcon />
+            </HomeTextCTA>
           </HomeTextContainer>
         </HomeSplash>
 
@@ -87,7 +95,6 @@ const HomeTextContainer = styled.section`
     font-size: 6rem;
     font-weight: 600;
     letter-spacing: 1.2rem;
-    padding-bottom: 2rem;
     text-transform: uppercase;
     transition: all 150ms linear;
 
@@ -128,6 +135,36 @@ const HomeTextContainer = styled.section`
     @media screen and (max-width: 406px) {
       font-size: 1rem;
     }
+  }
+`;
+
+// Styled: HomeTextCTA
+const HomeTextCTA = styled.div`
+  align-items: center;
+  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  color: ${(props) => props.theme.colors.global.textSecondary};
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: background 150ms linear, color 150ms linear,
+    border-radius 300ms linear;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.global.highlightPrimary};
+    background: ${(props) => props.theme.colors.global.backgroundSecondary};
+    border-radius: 80px;
+    transition: background 150ms linear, color 150ms linear,
+      border-radius 300ms linear;
+  }
+
+  & span {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+    text-transform: uppercase;
   }
 `;
 
