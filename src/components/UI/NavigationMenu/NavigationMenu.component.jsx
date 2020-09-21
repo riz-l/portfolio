@@ -103,7 +103,7 @@ const NavigationOptions = styled.div`
   & p {
     color: ${(props) => props.theme.colors.global.textPrimary};
     cursor: pointer;
-    font-size: 34px;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 2rem 0;
