@@ -30,6 +30,29 @@ function Home() {
           <Gallery />
         </HomeGalleryContainer>
 
+        <HomeAboutContainer>
+          <HomeAboutWrapper>
+            <h3>Hi, I'm Riz. Nice to meet you.</h3>
+            <p>
+              Since starting my career in the tech industry, I've been craving
+              opportunities to learn and push myself. Armed with VS Code, Figma
+              and plenty of coffee, I'm ready for a challenge.
+            </p>
+
+            <p>
+              I'm currently working for DXC Technology as a React JS developer -
+              a role where I'm able to learn exciting new technologies daily,
+              whilst tackling real-life problems. When I'm not doing my day job,
+              I sit as a lead for the Mobile Application Adoption in Defence
+              work stream for Team Defence Information's JIG-V.
+            </p>
+
+            <HomeTextCTA>
+              <span>About me</span>
+            </HomeTextCTA>
+          </HomeAboutWrapper>
+        </HomeAboutContainer>
+
         <Footer />
       </HomeContainer>
     </>
@@ -56,7 +79,7 @@ const homeGradient = keyframes`
 `;
 
 // Styled: HomeSplash
-const HomeSplash = styled.div`
+const HomeSplash = styled.section`
   animation-duration: 10s;
   animation-name: ${homeGradient};
   animation-iteration-count: infinite;
@@ -74,7 +97,7 @@ const HomeSplash = styled.div`
 `;
 
 // Styled: HomeTextContainer
-const HomeTextContainer = styled.section`
+const HomeTextContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -163,8 +186,11 @@ const HomeTextCTA = styled.div`
   & span {
     font-size: 1.4rem;
     letter-spacing: 1px;
-    margin-right: 10px;
     text-transform: uppercase;
+  }
+
+  & svg {
+    margin-left: 10px;
   }
 `;
 
@@ -172,4 +198,44 @@ const HomeTextCTA = styled.div`
 const HomeGalleryContainer = styled.div`
   margin-top: -8rem;
   padding: 3.2rem 0;
+`;
+
+// Styled: HomeAboutContainer
+const HomeAboutContainer = styled.section`
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
+  height: auto;
+  margin: 3.2rem 0;
+  transition: all 150ms linear;
+  width: 100%;
+`;
+
+// Styled: HomeAboutWrapper
+const HomeAboutWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 3.2rem 0;
+  width: 60%;
+
+  @media screen and (max-width: 1024px) {
+    width: 75%;
+  }
+
+  & h3 {
+    color: ${(props) => props.theme.colors.global.textPrimary};
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  & p {
+    color: ${(props) => props.theme.colors.global.textSecondary};
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 1rem 0;
+  }
 `;
