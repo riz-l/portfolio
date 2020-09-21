@@ -217,6 +217,7 @@ const HomeAboutWrapper = styled.div`
   justify-content: center;
   margin: auto;
   padding: 3.2rem 0;
+  transition: all 150ms linear;
   width: 60%;
 
   @media screen and (max-width: 1024px) {

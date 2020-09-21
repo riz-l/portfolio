@@ -1,18 +1,18 @@
 export default {
   colors: {
     global: {
-      backgroundPrimary: "#f7f7f7",
+      backgroundPrimary: "#f1f1f1",
       backgroundSecondary: "#ffffff",
       textPrimary: "#202020",
-      textSecondary: "#282828",
+      textSecondary: "#292929",
       highlightPrimary: "#ff5851",
       highlightSecondary: "#ff7570",
     },
     header: {
       backgroundPrimary: "#202020",
-      backgroundSecondary: "#282828",
+      backgroundSecondary: "#292929",
       textPrimary: "#ffffff",
-      textSecondary: "#f7f7f7",
+      textSecondary: "#f1f1f1",
     },
     homeGradient: {
       gradientPrimary: "#6d5e90",
