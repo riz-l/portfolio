@@ -8,14 +8,16 @@ import darkTheme from "./themes/darkTheme";
 
 // Import: UI
 import Header from "./components/UI/Header/Header.component";
+import NavigationMenu from "./components/UI/NavigationMenu/NavigationMenu.component";
 
 // Import: page
 import Home from "./components/pages/Home/Home.component";
 
 // Component: App
 function App() {
-  // State = isDarkTheme
+  // State = isDarkTheme, isOpen
   const [isDarkTheme, setIsDarkTheme] = useState(getInitialTheme());
+  const [isOpen, setIsOpen] = useState(false);
 
   // Sets user preference for light/dark theme
   useEffect(() => {
@@ -54,7 +56,19 @@ function App() {
     <>
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <AppContainer>
-          <Header isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
+          <NavigationMenu
+            isDarkTheme={isDarkTheme}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+          />
+
+          <Header
+            isDarkTheme={isDarkTheme}
+            setIsDarkTheme={setIsDarkTheme}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+          />
+
           <Home />
         </AppContainer>
       </ThemeProvider>

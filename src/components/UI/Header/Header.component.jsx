@@ -12,7 +12,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { IconButton } from "@material-ui/core";
 
 // UI: Header
-function Header({ isDarkTheme, setIsDarkTheme }) {
+function Header({ isDarkTheme, setIsDarkTheme, isOpen, setIsOpen }) {
   return (
     <HeaderContainer>
       <HeaderWrapper>
@@ -37,7 +37,7 @@ function Header({ isDarkTheme, setIsDarkTheme }) {
         <HeaderCenter></HeaderCenter>
 
         <HeaderRight>
-          <IconButton>
+          <IconButton onClick={() => setIsOpen((isOpen) => !isOpen)}>
             <MenuIcon fontSize="large" />
           </IconButton>
         </HeaderRight>
