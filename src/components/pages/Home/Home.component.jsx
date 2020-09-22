@@ -202,9 +202,10 @@ const HomeGalleryContainer = styled.div`
 
 // Styled: HomeAboutContainer
 const HomeAboutContainer = styled.section`
-  background: ${(props) => props.theme.colors.global.backgroundPrimary};
+  background: ${(props) => props.theme.colors.global.backgroundSecondary};
   height: auto;
-  margin: 3.2rem 0;
+  margin: -3.2rem 0 3.2rem 0;
+  padding: 3.2rem 0;
   transition: all 150ms linear;
   width: 100%;
 `;
