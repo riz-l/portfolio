@@ -240,4 +240,8 @@ const HomeAboutWrapper = styled.div`
     line-height: 2.4rem;
     padding: 1rem 0;
   }
+
+  & ${HomeTextCTA} {
+    background: ${(props) => props.theme.colors.global.backgroundPrimary};
+  }
 `;
