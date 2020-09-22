@@ -204,8 +204,8 @@ const HomeGalleryContainer = styled.div`
 const HomeAboutContainer = styled.section`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
   height: auto;
-  margin: -3.2rem 0 3.2rem 0;
-  padding: 3.2rem 0;
+  margin-top: 3.2rem;
+  padding: 4rem 0;
   transition: all 150ms linear;
   width: 100%;
 `;
