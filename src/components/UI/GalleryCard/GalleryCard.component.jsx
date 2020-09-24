@@ -3,12 +3,18 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // UI: GalleryCard
-function GalleryCard({ cardImage, cardText, cardTitle }) {
+function GalleryCard({ cardImage, cardText, cardTitle, cardInfo }) {
   return (
     <GalleryCardContainer
       style={{ backgroundImage: `url(${cardImage})` }}
       title={cardTitle}
     >
+      <GalleryCardInfoContainer>
+        <GalleryCardInfo>
+          <p>{cardInfo}</p>
+        </GalleryCardInfo>
+      </GalleryCardInfoContainer>
+
       <GalleryCardTextContainer>
         <GalleryCardText>{cardText}</GalleryCardText>
       </GalleryCardTextContainer>
@@ -23,6 +29,31 @@ export default GalleryCard;
 const galleryCardFadeIn = keyframes`
     0% {opacity: 0; transform: translateY(-20px)};
     100% {opacity: 1; transform: translateY(0)};
+`;
+
+// Styled: GalleryCardInfoContainer
+const GalleryCardInfoContainer = styled.div`
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+`;
+
+// Styled: GalleryCardInfo
+const GalleryCardInfo = styled.div`
+  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  color: ${(props) => props.theme.colors.global.textPrimary};
+  padding: 1rem;
+  text-align: center;
+  width: 70%;
+  margin: auto;
 `;
 
 // Styled: GalleryCardContainer
@@ -43,7 +74,15 @@ const GalleryCardContainer = styled.div`
 
   &:hover {
     filter: brightness(100%) saturate(100%);
+    transform: translateY(-6px);
     transition: all 300ms ease-in-out;
+    box-shadow: 0 11px 8px -9px rgba(0, 0, 0, 0.35);
+
+    & ${GalleryCardInfoContainer} {
+      opacity: 1;
+      visibility: visible;
+      transition: all 300ms ease-in-out;
+    }
   }
 `;
 
