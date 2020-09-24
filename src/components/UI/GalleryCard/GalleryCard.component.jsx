@@ -42,7 +42,9 @@ const GalleryCardContainer = styled.div`
   width: 100%;
 
   &:hover {
+    box-shadow: 0 10px 8px -9px rgba(0, 0, 0, 0.35);
     filter: brightness(100%) saturate(100%);
+    transform: translateY(-11px);
     transition: all 300ms ease-in-out;
   }
 `;
