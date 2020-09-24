@@ -44,8 +44,15 @@ const GalleryCardContainer = styled.div`
   &:hover {
     box-shadow: 0 10px 8px -9px rgba(0, 0, 0, 0.35);
     filter: brightness(100%) saturate(100%);
-    transform: translateY(-11px);
+    transform: translateY(-6px);
     transition: all 300ms ease-in-out;
+    box-shadow: 0 11px 8px -9px rgba(0, 0, 0, 0.35);
+
+    & ${GalleryCardInfoContainer} {
+      opacity: 1;
+      visibility: visible;
+      transition: all 300ms ease-in-out;
+    }
   }
 `;
 

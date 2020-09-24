@@ -40,11 +40,11 @@ function Home() {
             </p>
 
             <p>
-              I'm currently working for DXC Technology as a React JS developer -
-              a role where I'm able to learn exciting new technologies daily,
-              whilst tackling real-life problems. When I'm not doing my day job,
-              I sit as a lead for the Mobile Application Adoption in Defence
-              work stream for Team Defence Information's JIG-V.
+              I'm currently working for DXC Technology as a Front-end Developer
+              - a role where I'm able to learn exciting new technologies daily,
+              whilst tackling real-life problems. When I'm not working my day
+              job, I sit as a lead for the Mobile Application Adoption in
+              Defence work stream for Team Defence Information's JIG-V.
             </p>
 
             <HomeTextCTA>
