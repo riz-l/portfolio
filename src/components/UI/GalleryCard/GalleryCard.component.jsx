@@ -47,12 +47,6 @@ const GalleryCardContainer = styled.div`
     transform: translateY(-6px);
     transition: all 300ms ease-in-out;
     box-shadow: 0 11px 8px -9px rgba(0, 0, 0, 0.35);
-
-    & ${GalleryCardInfoContainer} {
-      opacity: 1;
-      visibility: visible;
-      transition: all 300ms ease-in-out;
-    }
   }
 `;
 
