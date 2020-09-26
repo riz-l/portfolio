@@ -86,6 +86,7 @@ const HeaderLeft = styled.div`
 // Styled: HeaderToggleScale
 const HeaderToggleScale = styled.div`
   transform: scale(0.65);
+  -webkit-tap-highlight-color: transparent;
 `;
 
 // Styled: HeaderToggleLight

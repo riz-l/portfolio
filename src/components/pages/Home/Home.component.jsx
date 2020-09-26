@@ -103,6 +103,7 @@ const HomeTextContainer = styled.div`
   flex-direction: column;
   height: 100%;
   justify-content: center;
+  letter-spacing: 8px;
   margin: auto;
   padding-top: 18rem;
   text-align: center;
@@ -117,7 +118,6 @@ const HomeTextContainer = styled.div`
     color: ${(props) => props.theme.colors.global.backgroundPrimary};
     font-size: 6rem;
     font-weight: 600;
-    letter-spacing: 1.2rem;
     text-transform: uppercase;
     transition: all 150ms linear;
 
@@ -174,6 +174,7 @@ const HomeTextCTA = styled.div`
   text-align: center;
   transition: background 150ms linear, color 150ms linear,
     border-radius 300ms linear;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     color: ${(props) => props.theme.colors.global.highlightPrimary};
