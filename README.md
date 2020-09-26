@@ -8,7 +8,7 @@ Welcome to my Portfolio GitHub repository. Please feel free to have a look throu
 
 - React JS
 
-## Packages in use:
+## Packages in use
 
 - `create-react-app`
 - `node-sass`
