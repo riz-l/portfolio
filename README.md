@@ -4,7 +4,7 @@
 
 Welcome to my Portfolio GitHub repository. Please feel free to have a look through the code. I will include some background information about the Portfolio for you to browse through below.
 
-## Packages installed:
+## Packages in use:
 
 - `create-react-app`
 - `node-sass`
