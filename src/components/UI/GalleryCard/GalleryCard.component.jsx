@@ -40,6 +40,7 @@ const GalleryCardContainer = styled.div`
   position: relative;
   transition: all 300ms ease-in-out;
   width: 100%;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     box-shadow: 0 10px 8px -9px rgba(0, 0, 0, 0.35);
@@ -60,6 +61,7 @@ const GalleryCardTextContainer = styled.div`
   position: absolute;
   width: 100%;
   z-index: 99;
+  -webkit-tap-highlight-color: transparent;
 `;
 
 // Styled: GalleryCardText

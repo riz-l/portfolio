@@ -174,6 +174,7 @@ const HomeTextCTA = styled.div`
   text-align: center;
   transition: background 150ms linear, color 150ms linear,
     border-radius 300ms linear;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     color: ${(props) => props.theme.colors.global.highlightPrimary};
