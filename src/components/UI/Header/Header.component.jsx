@@ -56,6 +56,7 @@ const HeaderContainer = styled.header`
   box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
   display: flex;
   height: 8vh;
+  min-height: 65px;
   justify-content: center;
   position: sticky;
   top: 0;
