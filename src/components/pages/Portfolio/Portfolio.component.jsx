@@ -30,7 +30,7 @@ const PortfolioContainer = styled.div`
 
 // Styled: PortfolioSplash
 const PortfolioSplash = styled.section`
-  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: 84vh;
   padding-bottom: 18rem;
   transition: all 150ms linear;

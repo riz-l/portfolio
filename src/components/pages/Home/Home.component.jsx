@@ -106,7 +106,6 @@ const HomeTextContainer = styled.div`
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  letter-spacing: 8px;
   margin: auto;
   padding-top: 18rem;
   text-align: center;
@@ -121,6 +120,7 @@ const HomeTextContainer = styled.div`
     color: ${(props) => props.theme.colors.global.backgroundPrimary};
     font-size: 6rem;
     font-weight: 600;
+    letter-spacing: 8px;
     text-transform: uppercase;
     transition: all 150ms linear;
 

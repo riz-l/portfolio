@@ -43,11 +43,10 @@ const GalleryCardContainer = styled.div`
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    box-shadow: 0 10px 8px -9px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 11px 8px -9px rgba(0, 0, 0, 0.35);
     filter: brightness(100%) saturate(100%);
     transform: translateY(-6px);
     transition: all 300ms ease-in-out;
-    box-shadow: 0 11px 8px -9px rgba(0, 0, 0, 0.35);
   }
 `;
 

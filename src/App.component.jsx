@@ -75,9 +75,15 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/portfolio">
+            <Portfolio isDarkTheme={isDarkTheme} />
+          </Route>
+          <Route path="/about">
+            <About isDarkTheme={isDarkTheme} />
+          </Route>
+          <Route path="/contact">
+            <Contact isDarkTheme={isDarkTheme} />
+          </Route>
         </Switch>
 
         <Footer />
