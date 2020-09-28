@@ -50,6 +50,10 @@ const AboutSplashContainer = styled.section`
   height: 84vh;
   transition: all 150ms linear;
   width: 100%;
+
+  @media screen and (max-width: 1290px) {
+    height: auto;
+  }
 `;
 
 // Styled: AboutSplash
@@ -60,6 +64,10 @@ const AboutSplash = styled.div`
   justify-content: center;
   margin: auto;
   width: 70%;
+
+  @media screen and (max-width: 1290px) {
+    flex-direction: column;
+  }
 
   @media screen and (max-width: 1024px) {
     width: 85%;
@@ -75,6 +83,11 @@ const AboutSplashLeft = styled.div`
   height: 100%;
   justify-content: center;
   width: 100%;
+
+  @media screen and (max-width: 1290px) {
+    align-items: center;
+    margin-top: 120px;
+  }
 
   & h1 {
     color: ${(props) => props.theme.colors.global.textPrimary};
@@ -132,6 +145,10 @@ const AboutSplashRight = styled.div`
   height: 100%;
   justify-content: flex-end;
   width: 100%;
+
+  @media screen and (max-width: 1290px) {
+    justify-content: center;
+  }
 `;
 
 // Styled: AboutSplashImage
