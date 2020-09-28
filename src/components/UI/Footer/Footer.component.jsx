@@ -75,6 +75,23 @@ function Footer() {
               <li>Portfolio Website</li>
             </ul>
           </FooterNavigationLinks>
+
+          <FooterNavigationLinks>
+            <h5>About</h5>
+            <ul>
+              <li>About Me</li>
+              <li>Background</li>
+              <li>Qualifications</li>
+              <li>Work Experience</li>
+            </ul>
+          </FooterNavigationLinks>
+
+          <FooterNavigationLinks>
+            <h5>Contact</h5>
+            <ul>
+              <li>Get In Touch</li>
+            </ul>
+          </FooterNavigationLinks>
         </FooterNavigation>
       </FooterWrapper>
     </FooterContainer>
@@ -181,7 +198,7 @@ const FooterSocialItem = styled.div`
 
 // Styled: FooterNavigation
 const FooterNavigation = styled.div`
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   height: auto;
@@ -193,6 +210,7 @@ const FooterNavigation = styled.div`
 // Styled: FooterNavigationLinks
 const FooterNavigationLinks = styled.div`
   padding: 1rem 0;
+  margin-right: 10px;
   min-width: 220px;
 
   & h5 {
@@ -216,8 +234,10 @@ const FooterNavigationLinks = styled.div`
       color: ${(props) => props.theme.colors.global.textSecondary};
       cursor: pointer;
       font-size: 14px;
-      padding: 6px 0;
+      margin: 6px 0;
+      padding: 2px 0;
       transition: all 150ms linear;
+      width: 70%;
 
       &:hover {
         color: ${(props) => props.theme.colors.global.highlightPrimary};
