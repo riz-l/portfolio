@@ -1,6 +1,7 @@
 // Import: Dependencies
 import React, { useState, useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
+import { Switch, Route } from "react-router-dom";
 
 // Import: Themes
 import lightTheme from "./themes/lightTheme";
@@ -69,7 +70,11 @@ function App() {
             setIsOpen={setIsOpen}
           />
 
-          <Home />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
         </AppContainer>
       </ThemeProvider>
     </>

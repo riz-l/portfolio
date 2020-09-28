@@ -1,5 +1,5 @@
 // Import: Dependencies
-import React from "react";
+import React, { useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 
 // Import: Material UI Icons
@@ -11,6 +11,11 @@ import Gallery from "../../UI/Gallery/Gallery.component";
 
 // page: Home
 function Home() {
+  // Upon navigation to Home, moves DOM to top of window
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <HomeContainer>

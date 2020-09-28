@@ -1,6 +1,7 @@
 // Import: Dependencies
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // Import: Material UI Icons
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -17,7 +18,9 @@ function Footer() {
     <FooterContainer>
       <FooterWrapper>
         <FooterHeader>
-          <h4>Riz Layton</h4>
+          <Link to="/">
+            <h4>Riz Layton</h4>
+          </Link>
 
           <FooterSocialContainer>
             <FooterSocialItem>
@@ -127,19 +130,27 @@ const FooterWrapper = styled.div`
 // Styled: FooterHeader
 const FooterHeader = styled.div`
   align-items: flex-start;
+  border-bottom: 1px solid ${(props) => props.theme.colors.global.textPrimary};
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
   width: 100%;
-  border-bottom: 1px solid ${(props) => props.theme.colors.global.textPrimary};
+  -webkit-tap-highlight-color: transparent;
 
   & h4 {
     color: ${(props) => props.theme.colors.global.textPrimary};
+    cursor: pointer;
     font-size: 2.6rem;
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: all 150ms linear;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.global.highlightPrimary};
+      transition: all 150ms linear;
+    }
   }
 `;
 
@@ -220,6 +231,7 @@ const FooterNavigationLinks = styled.div`
     font-weight: 500;
     padding: 8px 0;
     transition: all 150ms linear;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover {
       color: ${(props) => props.theme.colors.global.highlightPrimary};
@@ -238,6 +250,7 @@ const FooterNavigationLinks = styled.div`
       padding: 2px 0;
       transition: all 150ms linear;
       width: 70%;
+      -webkit-tap-highlight-color: transparent;
 
       &:hover {
         color: ${(props) => props.theme.colors.global.highlightPrimary};
