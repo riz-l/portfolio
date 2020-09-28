@@ -21,7 +21,11 @@ function Footer() {
 
           <FooterSocialContainer>
             <FooterSocialItem>
-              <a href="https://github.com/riz-l" target="_blank">
+              <a
+                href="https://github.com/riz-l"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <IconButton>
                   <GitHubIcon fontSize="large" />
                 </IconButton>
@@ -32,6 +36,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/joshua-layton-a41100167/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <IconButton>
                   <LinkedInIcon fontSize="large" />
@@ -40,7 +45,11 @@ function Footer() {
             </FooterSocialItem>
 
             <FooterSocialItem>
-              <a href="https://twitter.com/riz_layton" target="_blank">
+              <a
+                href="https://twitter.com/riz_layton"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <IconButton>
                   <TwitterIcon fontSize="large" />
                 </IconButton>
@@ -56,7 +65,16 @@ function Footer() {
         </FooterHeader>
 
         <FooterNavigation>
-          <p>hello</p>
+          <FooterNavigationLinks>
+            <h5>Portfolio</h5>
+            <ul>
+              <li>One Response</li>
+              <li>Acronym Search</li>
+              <li>Rizji</li>
+              <li>Keyboard Shop</li>
+              <li>Portfolio Website</li>
+            </ul>
+          </FooterNavigationLinks>
         </FooterNavigation>
       </FooterWrapper>
     </FooterContainer>
@@ -69,7 +87,7 @@ export default Footer;
 // Styled: FooterContainer
 const FooterContainer = styled.footer`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
-  height: 40vh;
+  height: auto;
   transition: all 150ms linear;
   width: 100%;
 `;
@@ -163,11 +181,48 @@ const FooterSocialItem = styled.div`
 
 // Styled: FooterNavigation
 const FooterNavigation = styled.div`
-  background: red;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   height: auto;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 3rem;
   width: 100%;
+`;
+
+// Styled: FooterNavigationLinks
+const FooterNavigationLinks = styled.div`
+  padding: 1rem 0;
+  min-width: 220px;
+
+  & h5 {
+    color: ${(props) => props.theme.colors.global.textPrimary};
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 8px 0;
+    transition: all 150ms linear;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.global.highlightPrimary};
+      transition: all 150ms linear;
+    }
+  }
+
+  & ul {
+    list-style: none;
+
+    & li {
+      color: ${(props) => props.theme.colors.global.textSecondary};
+      cursor: pointer;
+      font-size: 14px;
+      padding: 6px 0;
+      transition: all 150ms linear;
+
+      &:hover {
+        color: ${(props) => props.theme.colors.global.highlightPrimary};
+        transition: all 150ms linear;
+      }
+    }
+  }
 `;
