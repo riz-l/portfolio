@@ -27,19 +27,39 @@ function NavigationMenu({ isDarkTheme, isOpen, setIsOpen }) {
       </NavigationToggleContainer>
 
       <NavigationOptions>
-        <Link to="/">
+        <Link
+          to="/"
+          onClick={() => {
+            setIsOpen((isOpen) => !isOpen);
+          }}
+        >
           <p>Home</p>
         </Link>
 
-        <Link to="/portfolio">
+        <Link
+          to="/portfolio"
+          onClick={() => {
+            setIsOpen((isOpen) => !isOpen);
+          }}
+        >
           <p>Portfolio</p>
         </Link>
 
-        <Link to="/about">
+        <Link
+          to="/about"
+          onClick={() => {
+            setIsOpen((isOpen) => !isOpen);
+          }}
+        >
           <p>About</p>
         </Link>
 
-        <Link to="/contact">
+        <Link
+          to="/contact"
+          onClick={() => {
+            setIsOpen((isOpen) => !isOpen);
+          }}
+        >
           <p>Contact</p>
         </Link>
       </NavigationOptions>
