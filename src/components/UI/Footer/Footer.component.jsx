@@ -69,7 +69,9 @@ function Footer() {
 
         <FooterNavigation>
           <FooterNavigationLinks>
-            <h5>Portfolio</h5>
+            <Link to="/portfolio">
+              <h5>Portfolio</h5>
+            </Link>
             <ul>
               <li>One Response</li>
               <li>Acronym Search</li>
@@ -80,7 +82,9 @@ function Footer() {
           </FooterNavigationLinks>
 
           <FooterNavigationLinks>
-            <h5>About</h5>
+            <Link to="/about">
+              <h5>About</h5>
+            </Link>
             <ul>
               <li>About Me</li>
               <li>Background</li>
@@ -90,7 +94,9 @@ function Footer() {
           </FooterNavigationLinks>
 
           <FooterNavigationLinks>
-            <h5>Contact</h5>
+            <Link to="/contact">
+              <h5>Contact</h5>
+            </Link>
             <ul>
               <li>Get In Touch</li>
             </ul>
@@ -166,7 +172,8 @@ const FooterSocialContainer = styled.div`
 
 // Styled: FooterSocialItem
 const FooterSocialItem = styled.div`
-  transition: border-radius 300ms linear, color 150ms linear;
+  transition: background 150ms linear, border-radius 300ms linear,
+    color 150ms linear;
 
   &:hover {
     .MuiIconButton-root {
@@ -179,7 +186,8 @@ const FooterSocialItem = styled.div`
     background: ${(props) => props.theme.colors.global.backgroundSecondary};
     border-radius: 0;
     margin-right: 16px;
-    transition: border-radius 300ms linear, color 150ms linear;
+    transition: background 150ms linear, border-radius 300ms linear,
+      color 150ms linear;
 
     & .MuiIconButton-label {
       & .MuiSvgIcon-root {
@@ -195,7 +203,8 @@ const FooterSocialItem = styled.div`
 
     &:hover {
       border-radius: 80px;
-      transition: border-radius 300ms linear, color 150ms linear;
+      transition: background 150ms linear, border-radius 300ms linear,
+        color 150ms linear;
 
       & .MuiIconButton-label {
         & .MuiSvgIcon-root {

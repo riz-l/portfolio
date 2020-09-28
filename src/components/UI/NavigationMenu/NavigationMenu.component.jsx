@@ -1,6 +1,7 @@
 // Import: Dependencies
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // Import: Material UI Icons
 import CloseIcon from "@material-ui/icons/Close";
@@ -10,6 +11,11 @@ import { IconButton } from "@material-ui/core";
 
 // UI: NavigationMenu
 function NavigationMenu({ isDarkTheme, isOpen, setIsOpen }) {
+  // Upon navigation from NavigationMenu, moves DOM to top of window
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <NavigationMenuContainer isOpen={isOpen} isDarkTheme={isDarkTheme}>
       <NavigationToggleContainer>
@@ -21,10 +27,21 @@ function NavigationMenu({ isDarkTheme, isOpen, setIsOpen }) {
       </NavigationToggleContainer>
 
       <NavigationOptions>
-        <p>Home</p>
-        <p>Portfolio</p>
-        <p>About</p>
-        <p>Contact</p>
+        <Link to="/">
+          <p>Home</p>
+        </Link>
+
+        <Link to="/portfolio">
+          <p>Portfolio</p>
+        </Link>
+
+        <Link to="/about">
+          <p>About</p>
+        </Link>
+
+        <Link to="/contact">
+          <p>Contact</p>
+        </Link>
       </NavigationOptions>
     </NavigationMenuContainer>
   );

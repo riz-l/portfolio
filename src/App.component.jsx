@@ -10,9 +10,13 @@ import darkTheme from "./themes/darkTheme";
 // Import: UI
 import Header from "./components/UI/Header/Header.component";
 import NavigationMenu from "./components/UI/NavigationMenu/NavigationMenu.component";
+import Footer from "./components/UI/Footer/Footer.component";
 
 // Import: page
 import Home from "./components/pages/Home/Home.component";
+import Portfolio from "./components/pages/Portfolio/Portfolio.component";
+import About from "./components/pages/About/About.component";
+import Contact from "./components/pages/Contact/Contact.component";
 
 // Component: App
 function App() {
@@ -54,30 +58,31 @@ function App() {
   }
 
   return (
-    <>
-      <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-        <AppContainer>
-          <NavigationMenu
-            isDarkTheme={isDarkTheme}
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-          />
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <AppContainer>
+        <NavigationMenu
+          isDarkTheme={isDarkTheme}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
 
-          <Header
-            isDarkTheme={isDarkTheme}
-            setIsDarkTheme={setIsDarkTheme}
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-          />
+        <Header
+          isDarkTheme={isDarkTheme}
+          setIsDarkTheme={setIsDarkTheme}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
 
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </AppContainer>
-      </ThemeProvider>
-    </>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+
+        <Footer />
+      </AppContainer>
+    </ThemeProvider>
   );
 }
 
