@@ -61,6 +61,7 @@ const HeaderContainer = styled.header`
   position: sticky;
   top: 0;
   transition: all 150ms linear;
+  width: 100%;
   z-index: 100;
 `;
 

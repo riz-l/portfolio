@@ -218,7 +218,7 @@ const HomeAboutWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  padding: 3.2rem 0;
+  padding: 6.4rem 0;
   transition: all 150ms linear;
   width: 60%;
 

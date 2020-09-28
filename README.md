@@ -2,9 +2,13 @@
 
 # Portfolio: Riz Layton
 
-Welcome to my Portfolio GitHub repository. Please feel free to have a look through the code. I will include some background information about the Portfolio for you to browse through below.
+Welcome to my Portfolio GitHub repository. Please feel free to have a look through the code. I will include some background information about the Portfolio for you to browse below.
 
-## Packages installed:
+## Chosen technologies
+
+- React JS
+
+## Packages in use
 
 - `create-react-app`
 - `node-sass`
@@ -12,3 +16,15 @@ Welcome to my Portfolio GitHub repository. Please feel free to have a look throu
 - `react-router-dom`
 - `@material-ui/core`
 - `@material-ui/icons`
+
+## Key features
+
+- Home page
+- Portfolio page
+- About page
+- Contact page
+
+## Extra features
+
+- Light / dark theme toggle
+- Case studies for each of the Portfolio items
