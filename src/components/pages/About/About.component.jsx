@@ -19,13 +19,24 @@ function About({ isDarkTheme }) {
           </AboutSplashLeft>
 
           <AboutSplashRight>
+            <AboutImageContainer>
+              <AboutImage>
+                <img
+                  src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+                  alt="It's me, Riz!"
+                />
+              </AboutImage>
+            </AboutImageContainer>
+          </AboutSplashRight>
+
+          {/* <AboutSplashRight>
             <AboutSplashImage>
               <img
                 src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
                 alt="It's me, Riz!"
               />
             </AboutSplashImage>
-          </AboutSplashRight>
+          </AboutSplashRight> */}
         </AboutSplash>
       </AboutSplashContainer>
 
@@ -148,6 +159,26 @@ const AboutSplashRight = styled.div`
 
   @media screen and (max-width: 1290px) {
     justify-content: center;
+  }
+`;
+
+// Styled: AboutImageContainer
+const AboutImageContainer = styled.div`
+  background: transparent;
+  position: relative;
+  width: 80%;
+`;
+
+// Styled: AboutImage
+const AboutImage = styled.div`
+  background: ${(props) => props.theme.colors.global.textPrimary};
+  height: 100%;
+  margin: auto;
+  width: 100%;
+
+  & img {
+    width: 70%;
+    height: 100%;
   }
 `;
 
