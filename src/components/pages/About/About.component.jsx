@@ -19,24 +19,13 @@ function About({ isDarkTheme }) {
           </AboutSplashLeft>
 
           <AboutSplashRight>
-            <AboutImageContainer>
-              <AboutImage>
-                <img
-                  src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
-                  alt="It's me, Riz!"
-                />
-              </AboutImage>
-            </AboutImageContainer>
-          </AboutSplashRight>
-
-          {/* <AboutSplashRight>
-            <AboutSplashImage>
+            <AboutSplashImageContainer>
               <img
-                src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                 alt="It's me, Riz!"
               />
-            </AboutSplashImage>
-          </AboutSplashRight> */}
+            </AboutSplashImageContainer>
+          </AboutSplashRight>
         </AboutSplash>
       </AboutSplashContainer>
 
@@ -159,43 +148,26 @@ const AboutSplashRight = styled.div`
 
   @media screen and (max-width: 1290px) {
     justify-content: center;
+    margin: 6rem 0;
   }
 `;
 
-// Styled: AboutImageContainer
-const AboutImageContainer = styled.div`
-  background: transparent;
-  position: relative;
-  width: 80%;
-`;
-
-// Styled: AboutImage
-const AboutImage = styled.div`
-  background: ${(props) => props.theme.colors.global.textPrimary};
-  height: 100%;
-  margin: auto;
-  width: 100%;
-
-  & img {
-    width: 70%;
-    height: 100%;
-  }
-`;
-
-// Styled: AboutSplashImage
-const AboutSplashImage = styled.div`
+// Styled: AboutSplashImageContainer
+const AboutSplashImageContainer = styled.div`
   align-items: center;
-  background: ${(props) => props.theme.colors.global.textSecondary};
   display: flex;
-  height: 80%;
+  height: 85%;
   justify-content: center;
-  padding: 2rem 1rem;
+  width: 85%;
   transition: all 150ms linear;
-  width: 80%;
 
   & img {
-    box-shadow: 0 11px 8px -9px rgba(0, 0, 0, 0.35);
-    margin: 2rem 1rem;
+    background: ${(props) => props.theme.colors.global.textPrimary};
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+    transition: all 150ms linear;
   }
 `;
 
