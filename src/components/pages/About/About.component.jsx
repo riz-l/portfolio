@@ -21,7 +21,7 @@ function About({ isDarkTheme }) {
           <AboutSplashRight>
             <AboutSplashImageContainer>
               <img
-                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2133&q=80"
                 alt="It's me, Riz!"
               />
             </AboutSplashImageContainer>
