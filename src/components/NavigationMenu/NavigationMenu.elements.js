@@ -1,77 +1,8 @@
 // Import: Dependencies
-import React, { useEffect } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-// Import: Material UI Icons
-import CloseIcon from "@material-ui/icons/Close";
-
-// Import: Material Core
-import { IconButton } from "@material-ui/core";
-
-// UI: NavigationMenu
-function NavigationMenu({ isDarkTheme, isOpen, setIsOpen }) {
-  // Upon navigation from NavigationMenu, moves DOM to top of window
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return (
-    <NavigationMenuContainer isOpen={isOpen} isDarkTheme={isDarkTheme}>
-      <NavigationToggleContainer>
-        <NavigationToggle>
-          <IconButton onClick={() => setIsOpen((isOpen) => !isOpen)}>
-            <CloseIcon fontSize="large" />
-          </IconButton>
-        </NavigationToggle>
-      </NavigationToggleContainer>
-
-      <NavigationOptions>
-        <Link
-          to="/"
-          onClick={() => {
-            setIsOpen((isOpen) => !isOpen);
-          }}
-        >
-          <p>Home</p>
-        </Link>
-
-        <Link
-          to="/portfolio"
-          onClick={() => {
-            setIsOpen((isOpen) => !isOpen);
-          }}
-        >
-          <p>Portfolio</p>
-        </Link>
-
-        <Link
-          to="/about"
-          onClick={() => {
-            setIsOpen((isOpen) => !isOpen);
-          }}
-        >
-          <p>About</p>
-        </Link>
-
-        <Link
-          to="/contact"
-          onClick={() => {
-            setIsOpen((isOpen) => !isOpen);
-          }}
-        >
-          <p>Contact</p>
-        </Link>
-      </NavigationOptions>
-    </NavigationMenuContainer>
-  );
-}
-
-// Export: NavigationMenu
-export default NavigationMenu;
 
 // Styled: NavigationMenuContainer
-const NavigationMenuContainer = styled.nav`
+export const NavigationMenuContainer = styled.nav`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: 100vh;
   max-height: 100vh;
@@ -89,10 +20,12 @@ const NavigationMenuContainer = styled.nav`
 `;
 
 // Styled: NavigationToggleContainer
-const NavigationToggleContainer = styled.div`
+export const NavigationToggleContainer = styled.div`
   align-items: center;
   display: flex;
   height: 8vh;
+  max-height: 80px;
+  min-height: 65px;
   justify-content: center;
   top: 0;
   transition: all 150ms linear;
@@ -100,7 +33,7 @@ const NavigationToggleContainer = styled.div`
 `;
 
 // Styled: NavigationToggle
-const NavigationToggle = styled.div`
+export const NavigationToggle = styled.div`
   align-items: center;
   display: flex;
   justify-content: flex-end;
@@ -129,10 +62,10 @@ const NavigationToggle = styled.div`
 `;
 
 // Styled: NavigationOptions
-const NavigationOptions = styled.div`
+export const NavigationOptions = styled.div`
   display: flex;
   flex-direction: column;
-  height: 92vh;
+  height: 80vh;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -150,6 +83,10 @@ const NavigationOptions = styled.div`
     &:hover {
       color: ${(props) => props.theme.colors.global.highlightPrimary};
       transition: color 0.3s linear;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1.4rem;
     }
   }
 `;

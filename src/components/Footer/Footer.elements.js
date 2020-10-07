@@ -1,117 +1,8 @@
 // Import: Dependencies
-import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-// Import: Material UI Icons
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import InstagramIcon from "@material-ui/icons/Instagram";
-
-// Import: Material Core
-import { IconButton } from "@material-ui/core";
-
-// UI: Footer
-function Footer() {
-  return (
-    <FooterContainer>
-      <FooterWrapper>
-        <FooterHeader>
-          <Link to="/">
-            <h4>Riz Layton</h4>
-          </Link>
-
-          <FooterSocialContainer>
-            <FooterSocialItem>
-              <a
-                href="https://github.com/riz-l"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IconButton>
-                  <GitHubIcon fontSize="large" />
-                </IconButton>
-              </a>
-            </FooterSocialItem>
-
-            <FooterSocialItem>
-              <a
-                href="https://www.linkedin.com/in/joshua-layton-a41100167/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IconButton>
-                  <LinkedInIcon fontSize="large" />
-                </IconButton>
-              </a>
-            </FooterSocialItem>
-
-            <FooterSocialItem>
-              <a
-                href="https://twitter.com/riz_layton"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <IconButton>
-                  <TwitterIcon fontSize="large" />
-                </IconButton>
-              </a>
-            </FooterSocialItem>
-
-            <FooterSocialItem>
-              <IconButton>
-                <InstagramIcon fontSize="large" />
-              </IconButton>
-            </FooterSocialItem>
-          </FooterSocialContainer>
-        </FooterHeader>
-
-        <FooterNavigation>
-          <FooterNavigationLinks>
-            <Link to="/portfolio">
-              <h5>Portfolio</h5>
-            </Link>
-            <ul>
-              <li>One Response</li>
-              <li>Acronym Search</li>
-              <li>Rizji</li>
-              <li>Keyboard Shop</li>
-              <li>Portfolio Website</li>
-            </ul>
-          </FooterNavigationLinks>
-
-          <FooterNavigationLinks>
-            <Link to="/about">
-              <h5>About</h5>
-            </Link>
-            <ul>
-              <li>About Me</li>
-              <li>Background</li>
-              <li>Qualifications</li>
-              <li>Work Experience</li>
-            </ul>
-          </FooterNavigationLinks>
-
-          <FooterNavigationLinks>
-            <Link to="/contact">
-              <h5>Contact</h5>
-            </Link>
-            <ul>
-              <li>Get In Touch</li>
-            </ul>
-          </FooterNavigationLinks>
-        </FooterNavigation>
-      </FooterWrapper>
-    </FooterContainer>
-  );
-}
-
-// Export: Footer
-export default Footer;
 
 // Styled: FooterContainer
-const FooterContainer = styled.footer`
+export const FooterContainer = styled.footer`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: auto;
   transition: all 150ms linear;
@@ -119,7 +10,7 @@ const FooterContainer = styled.footer`
 `;
 
 // Styled: FooterWrapper
-const FooterWrapper = styled.div`
+export const FooterWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -134,7 +25,7 @@ const FooterWrapper = styled.div`
 `;
 
 // Styled: FooterHeader
-const FooterHeader = styled.div`
+export const FooterHeader = styled.div`
   align-items: flex-start;
   border-bottom: 1px solid ${(props) => props.theme.colors.global.textPrimary};
   display: flex;
@@ -161,7 +52,7 @@ const FooterHeader = styled.div`
 `;
 
 // Styled: FooterSocialContainer
-const FooterSocialContainer = styled.div`
+export const FooterSocialContainer = styled.div`
   align-items: center;
   display: flex;
   height: 100%;
@@ -171,7 +62,7 @@ const FooterSocialContainer = styled.div`
 `;
 
 // Styled: FooterSocialItem
-const FooterSocialItem = styled.div`
+export const FooterSocialItem = styled.div`
   transition: background 150ms linear, border-radius 300ms linear,
     color 150ms linear;
 
@@ -217,7 +108,7 @@ const FooterSocialItem = styled.div`
 `;
 
 // Styled: FooterNavigation
-const FooterNavigation = styled.div`
+export const FooterNavigation = styled.div`
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
@@ -228,7 +119,7 @@ const FooterNavigation = styled.div`
 `;
 
 // Styled: FooterNavigationLinks
-const FooterNavigationLinks = styled.div`
+export const FooterNavigationLinks = styled.div`
   padding: 1rem 0;
   margin-right: 10px;
   min-width: 220px;

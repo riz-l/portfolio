@@ -1,72 +1,8 @@
 // Import: Dependencies
-import React, { useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import { Link } from "react-router-dom";
-
-// Import: Material UI Icons
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-
-// Import: UI
-import Gallery from "../../UI/Gallery/Gallery.component";
-
-// page: Home
-function Home() {
-  // Upon navigation to Home, moves DOM to top of window
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return (
-    <HomeContainer>
-      <HomeSplash>
-        <HomeTextContainer>
-          <h1>Riz Layton</h1>
-          <h2>Web &amp; App Developer</h2>
-
-          <HomeTextCTA>
-            <span>My work</span>
-            <ExpandMoreIcon />
-          </HomeTextCTA>
-        </HomeTextContainer>
-      </HomeSplash>
-
-      <HomeGalleryContainer>
-        <Gallery />
-      </HomeGalleryContainer>
-
-      <HomeAboutContainer>
-        <HomeAboutWrapper>
-          <h3>Hi, I'm Riz. Nice to meet you.</h3>
-          <p>
-            Since starting my career in the tech industry, I've been craving
-            opportunities to learn and push myself. Armed with VS Code, Figma
-            and plenty of coffee, I'm ready for a challenge.
-          </p>
-
-          <p>
-            I'm currently working for DXC Technology as a Front-end Developer -
-            a role where I'm able to learn exciting new technologies daily,
-            whilst tackling real-life problems. When I'm not working my day job,
-            I sit as a lead for the Mobile Application Adoption in Defence work
-            stream for Team Defence Information's JIG-V.
-          </p>
-
-          <Link to="/about">
-            <HomeTextCTA>
-              <span>About me</span>
-            </HomeTextCTA>
-          </Link>
-        </HomeAboutWrapper>
-      </HomeAboutContainer>
-    </HomeContainer>
-  );
-}
-
-// Export: Home
-export default Home;
 
 // Styled: HomeContainer
-const HomeContainer = styled.main`
+export const HomeContainer = styled.main`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: auto;
   position: relative;
@@ -82,7 +18,7 @@ const homeGradient = keyframes`
 `;
 
 // Styled: HomeSplash
-const HomeSplash = styled.section`
+export const HomeSplash = styled.section`
   animation-duration: 10s;
   animation-name: ${homeGradient};
   animation-iteration-count: infinite;
@@ -100,7 +36,7 @@ const HomeSplash = styled.section`
 `;
 
 // Styled: HomeTextContainer
-const HomeTextContainer = styled.div`
+export const HomeTextContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -165,7 +101,7 @@ const HomeTextContainer = styled.div`
 `;
 
 // Styled: HomeTextCTA
-const HomeTextCTA = styled.div`
+export const HomeTextCTA = styled.div`
   align-items: center;
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
   color: ${(props) => props.theme.colors.global.textSecondary};
@@ -199,13 +135,13 @@ const HomeTextCTA = styled.div`
 `;
 
 // Styled: HomeGalleryContainer
-const HomeGalleryContainer = styled.div`
+export const HomeGalleryContainer = styled.div`
   margin-top: -8rem;
   padding: 3.2rem 0;
 `;
 
 // Styled: HomeAboutContainer
-const HomeAboutContainer = styled.section`
+export const HomeAboutContainer = styled.section`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
   height: auto;
   margin-top: 3.2rem;
@@ -215,7 +151,7 @@ const HomeAboutContainer = styled.section`
 `;
 
 // Styled: HomeAboutWrapper
-const HomeAboutWrapper = styled.div`
+export const HomeAboutWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -223,10 +159,10 @@ const HomeAboutWrapper = styled.div`
   margin: auto;
   padding: 6.4rem 0;
   transition: all 150ms linear;
-  width: 60%;
+  width: 70%;
 
   @media screen and (max-width: 1024px) {
-    width: 75%;
+    width: 85%;
   }
 
   & h3 {

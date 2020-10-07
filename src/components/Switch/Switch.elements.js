@@ -1,35 +1,11 @@
 // Import: Dependencies
-import React from "react";
 import styled from "styled-components";
 
-// UI: Switch
-function Switch({ isOn, handleToggle, onColor }) {
-  return (
-    <>
-      <SwitchCheckbox
-        checked={isOn}
-        onChange={handleToggle}
-        id={`react-switch-new`}
-        type="checkbox"
-      />
-      <SwitchLabel
-        style={{ background: isOn && onColor }}
-        htmlFor={`react-switch-new`}
-      >
-        <SwitchButton />
-      </SwitchLabel>
-    </>
-  );
-}
-
-// Export: Switch
-export default Switch;
-
 // Styled: SwitchButton
-const SwitchButton = styled.span``;
+export const SwitchButton = styled.span``;
 
 // Styled: SwitchLabel
-const SwitchLabel = styled.label`
+export const SwitchLabel = styled.label`
   align-items: center;
   background: grey;
   border-radius: 100px;
@@ -60,7 +36,7 @@ const SwitchLabel = styled.label`
 `;
 
 // Styled: SwitchCheckbox
-const SwitchCheckbox = styled.input`
+export const SwitchCheckbox = styled.input`
   display: none;
   height: 0;
   visibility: hidden;

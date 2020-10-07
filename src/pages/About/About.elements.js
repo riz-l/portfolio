@@ -1,51 +1,15 @@
 // Import: Dependencies
-import React, { useEffect } from "react";
 import styled from "styled-components";
 
-// page: About
-function About({ isDarkTheme }) {
-  // Upon navigation to About, moves DOM to top of window
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return (
-    <AboutContainer>
-      <AboutSplashContainer>
-        <AboutSplash>
-          <AboutSplashLeft>
-            <h1>About</h1>
-            <h2>Hi, I'm Riz.</h2>
-          </AboutSplashLeft>
-
-          <AboutSplashRight>
-            <AboutSplashImageContainer>
-              <img
-                src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2133&q=80"
-                alt="It's me, Riz!"
-              />
-            </AboutSplashImageContainer>
-          </AboutSplashRight>
-        </AboutSplash>
-      </AboutSplashContainer>
-
-      <AboutTextContainer></AboutTextContainer>
-    </AboutContainer>
-  );
-}
-
-// Export: About
-export default About;
-
 // Styled: AboutContainer
-const AboutContainer = styled.div`
+export const AboutContainer = styled.div`
   height: auto;
   position: relative;
   width: 100%;
 `;
 
 // Styled: AboutSplashContainer
-const AboutSplashContainer = styled.section`
+export const AboutSplashContainer = styled.section`
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
   height: 84vh;
   transition: all 150ms linear;
@@ -57,7 +21,7 @@ const AboutSplashContainer = styled.section`
 `;
 
 // Styled: AboutSplash
-const AboutSplash = styled.div`
+export const AboutSplash = styled.div`
   align-items: center;
   display: flex;
   height: 100%;
@@ -75,7 +39,7 @@ const AboutSplash = styled.div`
 `;
 
 // Styled: AboutSplashLeft
-const AboutSplashLeft = styled.div`
+export const AboutSplashLeft = styled.div`
   align-items: flex-start;
   display: flex;
   flex: 1;
@@ -86,7 +50,7 @@ const AboutSplashLeft = styled.div`
 
   @media screen and (max-width: 1290px) {
     align-items: center;
-    margin-top: 120px;
+    margin-top: 180px;
   }
 
   & h1 {
@@ -138,7 +102,7 @@ const AboutSplashLeft = styled.div`
 `;
 
 // Styled: AboutSplashRight
-const AboutSplashRight = styled.div`
+export const AboutSplashRight = styled.div`
   align-items: center;
   display: flex;
   flex: 1;
@@ -153,7 +117,7 @@ const AboutSplashRight = styled.div`
 `;
 
 // Styled: AboutSplashImageContainer
-const AboutSplashImageContainer = styled.div`
+export const AboutSplashImageContainer = styled.div`
   align-items: center;
   display: flex;
   height: 85%;
@@ -169,13 +133,4 @@ const AboutSplashImageContainer = styled.div`
     width: 80%;
     transition: all 150ms linear;
   }
-`;
-
-// Styled: AboutTextContainer
-const AboutTextContainer = styled.section`
-  background: ${(props) => props.theme.colors.global.backgroundSecondary};
-  min-height: 60vh;
-  padding: 4rem 0;
-  transition: all 150ms linear;
-  width: 100%;
 `;
