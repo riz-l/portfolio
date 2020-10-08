@@ -120,9 +120,9 @@ export const AboutSplashRight = styled.div`
 export const AboutSplashImageContainer = styled.div`
   align-items: center;
   display: flex;
-  height: 85%;
+  height: 90%;
   justify-content: center;
-  width: 85%;
+  width: 90%;
   transition: all 150ms linear;
 
   & img {

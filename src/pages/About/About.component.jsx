@@ -41,7 +41,7 @@ function About() {
           <AboutSplashRight>
             <AboutSplashImageContainer>
               <img
-                src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2133&q=80"
+                src="https://images.unsplash.com/photo-1536513601554-036f2a55c7fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
                 alt="It's me, Riz!"
               />
             </AboutSplashImageContainer>
