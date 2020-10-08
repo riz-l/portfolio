@@ -30,5 +30,8 @@ export const SkillsTableRow = styled.tr``;
 // Styled: SkillsTableHeading
 export const SkillsTableHeading = styled.th``;
 
+// Styled: SkillsIcon
+export const SkillsIcon = styled.div``;
+
 // Styled: SkillsTableData
 export const SkillsTableData = styled.td``;

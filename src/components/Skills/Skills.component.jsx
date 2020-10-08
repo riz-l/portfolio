@@ -12,6 +12,7 @@ import {
   SkillsTable,
   SkillsTableRow,
   SkillsTableHeading,
+  SkillsIcon,
   SkillsTableData,
 } from "./Skills.elements";
 
@@ -24,9 +25,15 @@ function Skills({ isPrimaryBackground }) {
           <SkillsWrapper>
             <SkillsTable>
               <SkillsTableRow>
-                <SkillsTableHeading>Icon</SkillsTableHeading>
-                <SkillsTableHeading>Icon</SkillsTableHeading>
-                <SkillsTableHeading>Icon</SkillsTableHeading>
+                <SkillsTableHeading>
+                  <SkillsIcon></SkillsIcon>
+                </SkillsTableHeading>
+                <SkillsTableHeading>
+                  <SkillsIcon></SkillsIcon>
+                </SkillsTableHeading>
+                <SkillsTableHeading>
+                  <SkillsIcon></SkillsIcon>
+                </SkillsTableHeading>
               </SkillsTableRow>
 
               <SkillsTableRow>
