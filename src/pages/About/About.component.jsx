@@ -20,7 +20,7 @@ import {
 } from "./About.elements";
 
 // Import: Components
-import { ContentSection } from "../../components";
+import { ContentSection, Skills } from "../../components";
 
 // Page: About
 function About() {
@@ -50,6 +50,8 @@ function About() {
       </AboutSplashContainer>
 
       <ContentSection {...aboutObjOne} />
+
+      <Skills />
 
       <ContentSection {...aboutObjTwo} />
 

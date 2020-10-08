@@ -50,7 +50,7 @@ export const AboutSplashLeft = styled.div`
 
   @media screen and (max-width: 1290px) {
     align-items: center;
-    margin-top: 180px;
+    margin-top: 15.5rem;
   }
 
   & h1 {
@@ -112,7 +112,7 @@ export const AboutSplashRight = styled.div`
 
   @media screen and (max-width: 1290px) {
     justify-content: center;
-    margin: 6rem 0;
+    margin: 12rem 0;
   }
 `;
 

@@ -16,5 +16,8 @@ export { default as Header } from "./Header/Header.component";
 // Component: NavigationMenu
 export { default as NavigationMenu } from "./NavigationMenu/NavigationMenu.component";
 
+// Component: Skills
+export { default as Skills } from "./Skills/Skills.component";
+
 // Component: Switch
 export { default as Switch } from "./Switch/Switch.component";
