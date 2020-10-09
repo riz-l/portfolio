@@ -7,7 +7,7 @@ export const SwitchButton = styled.span``;
 // Styled: SwitchLabel
 export const SwitchLabel = styled.label`
   align-items: center;
-  background: grey;
+  background: #ff5851;
   border-radius: 100px;
   cursor: pointer;
   display: flex;

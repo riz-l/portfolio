@@ -76,6 +76,9 @@ export const SkillsHeader = styled.div`
   text-align: center;
   width: 90%;
 
+  border-bottom: 1px solid
+    ${(props) => props.theme.colors.global.highlightPrimary};
+
   & svg {
     color: ${(props) => props.theme.colors.global.textPrimary};
     font-size: 10rem;
