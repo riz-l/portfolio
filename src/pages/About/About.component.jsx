@@ -2,12 +2,7 @@
 import React, { useEffect } from "react";
 
 // Import: Data
-import {
-  aboutObjOne,
-  aboutObjTwo,
-  aboutObjThree,
-  aboutObjFour,
-} from "./aboutData";
+import { aboutObjOne, aboutObjTwo, aboutObjThree } from "./aboutData";
 
 // Import: Styled Components
 import {
@@ -49,15 +44,17 @@ function About() {
         </AboutSplash>
       </AboutSplashContainer>
 
+      {/* About Me */}
       <ContentSection {...aboutObjOne} />
 
+      {/* Skills */}
       <Skills />
 
+      {/* Work Experience */}
       <ContentSection {...aboutObjTwo} />
 
+      {/* Education */}
       <ContentSection {...aboutObjThree} />
-
-      <ContentSection {...aboutObjFour} />
     </AboutContainer>
   );
 }
