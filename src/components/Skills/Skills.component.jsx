@@ -56,7 +56,7 @@ function Skills({ isPrimaryBackground }) {
                 <SkillsDescription>
                   <h5>Frequently Used</h5>
                   <p>
-                    HTML, CSS, Sass, JavaScript, React JS, XAML, Firebase, Azure
+                    HTML, CSS, SCSS, JavaScript, React JS, XAML, Firebase, Azure
                   </p>
                 </SkillsDescription>
 
