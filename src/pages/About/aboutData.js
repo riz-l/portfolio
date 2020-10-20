@@ -11,7 +11,7 @@ export const aboutObjOne = {
   subHeadingTwo: null,
   subHeadingTwoLead: null,
   textTwoFirst:
-    "I have a varied background, having studied and worked in some very different industries, and the experiences that I've gained have helped me to have a critical yet adaptive mindset. Ultimately, I've become very passionate about the tech industry and have found it extraordinary as to how large an outreach and influence technology can have on other industries. However, not just in how technology can evolve existing practices and standards, but also how technology can revolutionize the way in which industries operate altogether.",
+    "I have a varied background, having studied and worked in some very different industries, and the experiences that I've gained have helped me to have a critical yet adaptive mindset. I've found that the tech industry's ability to influence other industry practices and operations, results in the tech industry being a very interesting space to work in.",
   textTwoSecond: null,
 };
 
