@@ -93,9 +93,10 @@ function Footer() {
             </Link>
             <ul>
               <li>About Me</li>
-              <li>Background</li>
-              <li>Qualifications</li>
+              <li>Skills</li>
               <li>Work Experience</li>
+              <li>Education</li>
+              <li>Other</li>
             </ul>
           </FooterNavigationLinks>
 
