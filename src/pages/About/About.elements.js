@@ -62,7 +62,7 @@ export const AboutSplashLeft = styled.div`
     transition: all 150ms linear;
 
     @media screen and (max-width: 718px) {
-      font-size: 4rem;
+      font-size: 5rem;
     }
   }
 
@@ -75,7 +75,7 @@ export const AboutSplashLeft = styled.div`
     transition: all 150ms linear;
 
     @media screen and (max-width: 570px) {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
 `;
