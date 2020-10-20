@@ -64,7 +64,7 @@ export const FooterSocialContainer = styled.div`
 // Styled: FooterSocialItem
 export const FooterSocialItem = styled.div`
   transition: background 150ms linear, border-radius 300ms linear,
-    color 150ms linear;
+    color 100ms linear;
 
   &:hover {
     .MuiIconButton-root {
@@ -78,16 +78,16 @@ export const FooterSocialItem = styled.div`
     border-radius: 0;
     margin-right: 16px;
     transition: background 150ms linear, border-radius 300ms linear,
-      color 150ms linear;
+      color 100ms linear;
 
     & .MuiIconButton-label {
       & .MuiSvgIcon-root {
         color: ${(props) => props.theme.colors.global.textSecondary};
-        transition: color 150ms linear;
+        transition: color 100ms linear;
 
         &:hover {
           color: ${(props) => props.theme.colors.global.highlightPrimary};
-          transition: color 150ms linear;
+          transition: color 100ms linear;
         }
       }
     }
@@ -95,12 +95,12 @@ export const FooterSocialItem = styled.div`
     &:hover {
       border-radius: 80px;
       transition: background 150ms linear, border-radius 300ms linear,
-        color 150ms linear;
+        color 100ms linear;
 
       & .MuiIconButton-label {
         & .MuiSvgIcon-root {
           color: ${(props) => props.theme.colors.global.highlightPrimary};
-          transition: color 150ms linear;
+          transition: color 100ms linear;
         }
       }
     }
@@ -130,12 +130,12 @@ export const FooterNavigationLinks = styled.div`
     font-size: 22px;
     font-weight: 500;
     padding: 8px 0;
-    transition: all 150ms linear;
+    transition: all 100ms linear;
     -webkit-tap-highlight-color: transparent;
 
     &:hover {
       color: ${(props) => props.theme.colors.global.highlightPrimary};
-      transition: all 150ms linear;
+      transition: all 100ms linear;
     }
   }
 
@@ -148,13 +148,13 @@ export const FooterNavigationLinks = styled.div`
       font-size: 14px;
       margin: 6px 0;
       padding: 2px 0;
-      transition: all 150ms linear;
+      transition: all 100ms linear;
       width: 70%;
       -webkit-tap-highlight-color: transparent;
 
       &:hover {
         color: ${(props) => props.theme.colors.global.highlightPrimary};
-        transition: all 150ms linear;
+        transition: all 100ms linear;
       }
     }
   }

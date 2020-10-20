@@ -13,9 +13,11 @@ function ContentSection({
   isPrimaryBackground,
   heading,
   subHeadingOne,
+  subHeadingOneLead,
   textOneFirst,
   textOneSecond,
   subHeadingTwo,
+  subHeadingTwoLead,
   textTwoFirst,
   textTwoSecond,
 }) {
@@ -24,13 +26,19 @@ function ContentSection({
       <Container>
         <Wrapper>
           <ContentSectionWrapper>
-            <h3>{heading}</h3>
-            <h4>{subHeadingOne}</h4>
-            <p>{textOneFirst}</p>
-            <p style={{ marginBottom: "2rem" }}>{textOneSecond}</p>
-            <h4>{subHeadingTwo}</h4>
-            <p>{textTwoFirst}</p>
-            <p>{textTwoSecond}</p>
+            <h3>{heading ? heading : null}</h3>
+
+            <h4>{subHeadingOne ? subHeadingOne : null}</h4>
+            <h5>{subHeadingOneLead ? subHeadingOneLead : null}</h5>
+            <p>{textOneFirst ? textOneFirst : null}</p>
+            <p style={subHeadingTwo ? { marginBottom: "2rem" } : null}>
+              {textOneSecond ? textOneSecond : null}
+            </p>
+
+            <h4>{subHeadingTwo ? subHeadingTwo : null}</h4>
+            <h5>{subHeadingTwoLead ? subHeadingTwoLead : null}</h5>
+            <p>{textTwoFirst ? textTwoFirst : null}</p>
+            <p>{textTwoSecond ? textTwoSecond : null}</p>
           </ContentSectionWrapper>
         </Wrapper>
       </Container>

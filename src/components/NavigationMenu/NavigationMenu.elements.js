@@ -73,20 +73,20 @@ export const NavigationOptions = styled.div`
   & p {
     color: ${(props) => props.theme.colors.global.textPrimary};
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 2rem 0;
     text-transform: uppercase;
-    transition: color 0.3s linear;
+    transition: color 150ms linear;
 
     &:hover {
       color: ${(props) => props.theme.colors.global.highlightPrimary};
-      transition: color 0.3s linear;
+      transition: color 150ms linear;
     }
 
     @media screen and (max-width: 1024px) {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
     }
   }
 `;

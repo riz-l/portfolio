@@ -2,14 +2,17 @@
 export const aboutObjOne = {
   isPrimaryBackground: false,
   heading: "About Me",
-  subHeadingOne: "",
+  subHeadingOne: null,
+  subHeadingOneLead: null,
   textOneFirst:
     "Since starting my career in the tech industry, I've been craving opportunities to learn and push myself. Armed with VS Code, Figma and plenty of coffee, I'm ready for a challenge.",
   textOneSecond:
     "I'm currently working for DXC Technology as a Front-end Developer - a role where I'm able to learn exciting new technologies daily, whilst tackling real-life problems. When I'm not working my day job, I sit as a lead for the Mobile Application Adoption in Defence work stream for Team Defence Information's Vanguard initiative.",
-  subHeadingTwo: "",
-  textTwoFirst: "",
-  textTwoSecond: "",
+  subHeadingTwo: null,
+  subHeadingTwoLead: null,
+  textTwoFirst:
+    "I have a varied background, having studied and worked in some very different industries, and the experiences that I've gained have helped me to have a critical yet adaptive mindset. Ultimately, I've become very passionate about the tech industry and have found it extraordinary as to how large an outreach and influence technology can have on other industries. However, not just in how technology can evolve existing practices and standards, but also how technology can revolutionize the way in which industries operate altogether.",
+  textTwoSecond: null,
 };
 
 // Data: aboutObjTwo
@@ -17,10 +20,12 @@ export const aboutObjTwo = {
   isPrimaryBackground: false,
   heading: "Work Experience",
   subHeadingOne: "DXC Technology",
+  subHeadingOneLead: null,
   textOneFirst:
     "I currently work as a Front-end developer in DXC Technology's healthcare branch. I spend most of my time working on DXC's 'OneResponse' offering, primarily in website and application development. I've been with DXC for just under two years, and since starting I've worked within website/application development, project management, policy, and customer engagement and advocacy.",
-  textOneSecond: "",
+  textOneSecond: null,
   subHeadingTwo: "TDI - Vanguard Initiative",
+  subHeadingTwoLead: null,
   textTwoFirst:
     "Alongside my work with DXC Technology, I also represent DXC in Team Defence Information's Vanguard Initiative as a co-lead for the Mobile Application Adoption in Defence work stream. Within the Vanguard initiative, I've developed and released an 'Acronym Search' application which enables new-starters to the UK Defence industry to quickly learn and become familiar with often overwhelming acronyms and definitions.",
   textTwoSecond:
@@ -31,12 +36,16 @@ export const aboutObjTwo = {
 export const aboutObjThree = {
   isPrimaryBackground: true,
   heading: "Education",
-  subHeadingOne: "",
+  subHeadingOne: "MA International Relations",
+  subHeadingOneLead: "University of Nottingham",
   textOneFirst:
-    "We are a generation of renters. While some people really do prefer the flexibility of private renting, the truth is that for most people it’s just too hard to get on the property ladder. Even before the pandemic, renters were spending 40% of their income on rent (the affordability benchmark is 30%). And, according to the Office of National Statistics, just over a third (36%) of private renters have said they have savings or money invested to buy a property.",
-  textOneSecond: "",
-  subHeadingTwo: "",
+    "During my postgradute degree I focused upon international security, counter terrorism and nuclear deterrence.",
+  textOneSecond:
+    "Throughout my studies I was really (and still am) fascinated as to how methodologies and schools of thought from nuclear deterrence and state security could be applied to terrorism deterrence, with my dissertation being focused around this topic.",
+  subHeadingTwo: "BA (Hons) Popular Music",
+  subHeadingTwoLead: "University of Huddersfield",
   textTwoFirst:
-    "For millions of people, we’re in privately rented homes for the long haul. So, with a pandemic and the biggest recession on record dictating our lives, what does it all mean for people living in privately rented properties right now?",
-  textTwoSecond: "",
+    "During my undergraduate degree I studied theory, production and performance, and also gained an understanding into music law and music business.",
+  textTwoSecond:
+    "Though I never pursued music professionally, at the time of studying I was intrigued by the music industry, and having been entirely self-taught, I wanted to see how far my curiousity would take me. Differing from my original intentions, studying a music degree sparked an interest in the technical side of music production, as well as the legal and monetary sides of music law and business.",
 };

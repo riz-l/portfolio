@@ -61,21 +61,8 @@ export const AboutSplashLeft = styled.div`
     text-transform: uppercase;
     transition: all 150ms linear;
 
-    @media screen and (max-width: 1030px) {
-      font-size: 5.5rem;
-    }
-
-    @media screen and (max-width: 830px) {
-      font-size: 5rem;
-    }
-
-    @media screen and (max-width: 746px) {
+    @media screen and (max-width: 718px) {
       font-size: 4rem;
-      padding-bottom: 1rem;
-    }
-
-    @media screen and (max-width: 406px) {
-      font-size: 3rem;
     }
   }
 
@@ -87,16 +74,8 @@ export const AboutSplashLeft = styled.div`
     text-transform: uppercase;
     transition: all 150ms linear;
 
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: 570px) {
       font-size: 2rem;
-    }
-
-    @media screen and (max-width: 642px) {
-      font-size: 1.4rem;
-    }
-
-    @media screen and (max-width: 406px) {
-      font-size: 1rem;
     }
   }
 `;
