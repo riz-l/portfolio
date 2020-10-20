@@ -49,3 +49,19 @@ export const aboutObjThree = {
   textTwoSecond:
     "Though I never pursued music professionally, at the time of studying I was intrigued by the music industry, and having been entirely self-taught, I wanted to see how far my curiousity would take me. Differing from my original intentions, studying a music degree sparked an interest in the technical side of music production, as well as the legal and monetary sides of music law and business.",
 };
+
+// Data: aboutObjFour
+export const aboutObjFour = {
+  isPrimaryBackground: false,
+  heading: "Other",
+  subHeadingOne: "Mentoring",
+  subHeadingOneLead: "",
+  textOneFirst:
+    "Alongside my work with DXC and TDI, I also spend time helping new apprentices and graduates. When mentoring, I've helped individuals to become comfortable within a new working environment, understand industry terms, working practices and methodologies, and also in upskilling areas such as project management and coding.",
+  textOneSecond:
+    "More specifically to coding, I've run HTML and CSS workshops to help individuals who are either interested in coding, or would like to be knowledgeable to a level where they can begin to understand the development cycle behind applications and website production.",
+  subHeadingTwo: null,
+  subHeadingTwoLead: null,
+  textTwoFirst: null,
+  textTwoSecond: null,
+};
