@@ -15,7 +15,7 @@ export const AboutSplashContainer = styled.section`
   transition: all 150ms linear;
   width: 100%;
 
-  @media screen and (max-width: 1290px) {
+  @media screen and (max-width: 1434px) {
     height: auto;
   }
 `;
@@ -29,7 +29,7 @@ export const AboutSplash = styled.div`
   margin: auto;
   width: 70%;
 
-  @media screen and (max-width: 1290px) {
+  @media screen and (max-width: 1434px) {
     flex-direction: column;
   }
 
@@ -48,7 +48,7 @@ export const AboutSplashLeft = styled.div`
   justify-content: center;
   width: 100%;
 
-  @media screen and (max-width: 1290px) {
+  @media screen and (max-width: 1434px) {
     align-items: center;
     margin-top: 15.5rem;
   }
@@ -90,7 +90,7 @@ export const AboutSplashRight = styled.div`
   margin: 1rem 0;
   width: 100%;
 
-  @media screen and (max-width: 1290px) {
+  @media screen and (max-width: 1434px) {
     justify-content: center;
     margin: 12rem 0;
   }
