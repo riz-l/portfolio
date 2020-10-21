@@ -63,9 +63,10 @@ export const aboutObjFour = {
   textOneFirst:
     "Alongside my work with DXC and TDI, I also spend time helping new apprentices and graduates. When mentoring, I've helped individuals to become comfortable within a new working environment, understand industry terms, working practices and methodologies, and also in upskilling areas such as project management and coding.",
   textOneSecond:
-    "More specifically to coding, I've run HTML and CSS workshops to help individuals who are either interested in coding, or would like to be knowledgeable to a level where they can begin to understand the development cycle behind applications and website production.",
+    "More specifically to coding, I've run HTML and CSS workshops to help individuals who are either interested in coding, or would like to be more knowledgeable in the area. Mostly, this involves helping individuals get to a point where they can begin to understand the development cycle behind applications and website production.",
   subHeadingTwo: "Hobbies",
   subHeadingTwoLead: null,
-  textTwoFirst: "Outside of work I love catching up on all things tech, reading into new international relations' events, watching football and playing games. I'm also a huge fan of mechanical keyboards!",
+  textTwoFirst:
+    "Outside of work I love catching up on all things tech, reading into new international relations' events, watching football and playing games. I'm also a huge fan of mechanical keyboards!",
   textTwoSecond: null,
 };
