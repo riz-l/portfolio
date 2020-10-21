@@ -1,3 +1,6 @@
+// Component: ContactForm
+export { default as ContactForm } from "./ContactForm/ContactForm.component";
+
 // Component: ContentSection
 export { default as ContentSection } from "./ContentSection/ContentSection.component";
 

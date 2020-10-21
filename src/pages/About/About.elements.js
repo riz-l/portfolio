@@ -111,7 +111,7 @@ export const AboutSplashImageContainer = styled.div`
     box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
     margin: auto;
     padding: 2rem;
-    height: 80%;
+    width: 80%;
     transition: all 150ms linear;
   }
 `;

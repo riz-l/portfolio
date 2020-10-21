@@ -2,7 +2,14 @@
 import React, { useEffect } from "react";
 
 // Import: Styled Components
-import { PortfolioContainer, PortfolioSplash } from "./Portfolio.elements";
+import {
+  PortfolioContainer,
+  PortfolioSplashContainer,
+  PortfolioSplash,
+  PortfolioSplashLeft,
+  PortfolioSplashRight,
+  PortfolioSplashImageContainer,
+} from "./Portfolio.elements";
 
 // Page: Portfolio
 function Portfolio() {
@@ -13,7 +20,23 @@ function Portfolio() {
 
   return (
     <PortfolioContainer>
-      <PortfolioSplash></PortfolioSplash>
+      <PortfolioSplashContainer>
+        <PortfolioSplash>
+          <PortfolioSplashLeft>
+            <h1>Portfolio</h1>
+            <h2>My work</h2>
+          </PortfolioSplashLeft>
+
+          <PortfolioSplashRight>
+            <PortfolioSplashImageContainer>
+              <img
+                src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
+                alt="Old telephone hanging by cable"
+              />
+            </PortfolioSplashImageContainer>
+          </PortfolioSplashRight>
+        </PortfolioSplash>
+      </PortfolioSplashContainer>
     </PortfolioContainer>
   );
 }
