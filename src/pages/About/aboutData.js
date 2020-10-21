@@ -1,5 +1,6 @@
 // Data: aboutObjOne
 export const aboutObjOne = {
+  isHeadingAtStart: true,
   isPrimaryBackground: false,
   heading: "About Me",
   subHeadingOne: null,
@@ -11,12 +12,13 @@ export const aboutObjOne = {
   subHeadingTwo: null,
   subHeadingTwoLead: null,
   textTwoFirst:
-    "I have a varied background, having studied and worked in some very different industries, and the experiences that I've gained have helped me to have a critical yet adaptive mindset. I've found that the tech industry's ability to influence other industry practices and operations, results in the tech industry being a very interesting space to work in.",
+    "I have a varied background, having studied and worked in some very different industries, and the experiences that I've gained have helped me to have a critical yet adaptive mindset. I've found that the tech industry's ability to influence other industry practices and operations results in the tech industry being a very interesting space to work in.",
   textTwoSecond: null,
 };
 
 // Data: aboutObjTwo
 export const aboutObjTwo = {
+  isHeadingAtStart: false,
   isPrimaryBackground: false,
   heading: "Work Experience",
   subHeadingOne: "DXC Technology",
@@ -34,6 +36,7 @@ export const aboutObjTwo = {
 
 // Data: aboutObjThree
 export const aboutObjThree = {
+  isHeadingAtStart: true,
   isPrimaryBackground: true,
   heading: "Education",
   subHeadingOne: "MA International Relations",
@@ -52,16 +55,17 @@ export const aboutObjThree = {
 
 // Data: aboutObjFour
 export const aboutObjFour = {
+  isHeadingAtStart: false,
   isPrimaryBackground: false,
   heading: "Other",
   subHeadingOne: "Mentoring",
-  subHeadingOneLead: "",
+  subHeadingOneLead: null,
   textOneFirst:
     "Alongside my work with DXC and TDI, I also spend time helping new apprentices and graduates. When mentoring, I've helped individuals to become comfortable within a new working environment, understand industry terms, working practices and methodologies, and also in upskilling areas such as project management and coding.",
   textOneSecond:
     "More specifically to coding, I've run HTML and CSS workshops to help individuals who are either interested in coding, or would like to be knowledgeable to a level where they can begin to understand the development cycle behind applications and website production.",
-  subHeadingTwo: null,
+  subHeadingTwo: "Hobbies",
   subHeadingTwoLead: null,
-  textTwoFirst: null,
+  textTwoFirst: "Outside of work I love catching up on all things tech, reading into new international relations' events, watching football and playing games. I'm also a huge fan of mechanical keyboards!",
   textTwoSecond: null,
 };

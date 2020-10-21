@@ -62,7 +62,7 @@ export const AboutSplashLeft = styled.div`
     transition: all 150ms linear;
 
     @media screen and (max-width: 718px) {
-      font-size: 5rem;
+      font-size: 4.6rem;
     }
   }
 
@@ -87,6 +87,7 @@ export const AboutSplashRight = styled.div`
   flex: 1;
   height: 100%;
   justify-content: flex-end;
+  margin: 1rem 0;
   width: 100%;
 
   @media screen and (max-width: 1290px) {
@@ -101,6 +102,7 @@ export const AboutSplashImageContainer = styled.div`
   display: flex;
   height: 90%;
   justify-content: center;
+  margin: auto;
   width: 90%;
   transition: all 150ms linear;
 
@@ -109,7 +111,7 @@ export const AboutSplashImageContainer = styled.div`
     box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
     margin: auto;
     padding: 2rem;
-    width: 80%;
+    height: 80%;
     transition: all 150ms linear;
   }
 `;

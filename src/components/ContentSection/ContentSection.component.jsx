@@ -10,6 +10,7 @@ import {
 
 // Component: ContentSection
 function ContentSection({
+  isHeadingAtStart,
   isPrimaryBackground,
   heading,
   subHeadingOne,
@@ -25,7 +26,7 @@ function ContentSection({
     <ContentSectionContainer isPrimaryBackground={isPrimaryBackground}>
       <Container>
         <Wrapper>
-          <ContentSectionWrapper>
+          <ContentSectionWrapper isHeadingAtStart={isHeadingAtStart}>
             <h3>{heading ? heading : null}</h3>
 
             <h4>{subHeadingOne ? subHeadingOne : null}</h4>
