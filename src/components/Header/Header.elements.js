@@ -1,61 +1,14 @@
 // Import: Dependencies
-import React from "react";
 import styled from "styled-components";
 
-// Import: Assets
-import Switch from "../Switch/Switch.component";
-
-// Import: Material UI Icons
-import MenuIcon from "@material-ui/icons/Menu";
-
-// Import: Material Core
-import { IconButton } from "@material-ui/core";
-
-// UI: Header
-function Header({ isDarkTheme, setIsDarkTheme, isOpen, setIsOpen }) {
-  return (
-    <HeaderContainer>
-      <HeaderWrapper>
-        <HeaderLeft>
-          <HeaderToggleLight>Light</HeaderToggleLight>
-          <HeaderToggleScale>
-            <Switch
-              isOn={isDarkTheme}
-              handleToggle={() => {
-                setIsDarkTheme((isDarkTheme) => !isDarkTheme);
-                localStorage.setItem(
-                  "isDarkTheme",
-                  (isDarkTheme) => !isDarkTheme
-                );
-              }}
-              onColor="#06d6A0"
-            />
-          </HeaderToggleScale>
-          <HeaderToggleDark>Dark</HeaderToggleDark>
-        </HeaderLeft>
-
-        <HeaderCenter></HeaderCenter>
-
-        <HeaderRight>
-          <IconButton onClick={() => setIsOpen((isOpen) => !isOpen)}>
-            <MenuIcon fontSize="large" />
-          </IconButton>
-        </HeaderRight>
-      </HeaderWrapper>
-    </HeaderContainer>
-  );
-}
-
-// Export: Header
-export default Header;
-
 // Styled: HeaderContainer
-const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header`
   align-items: center;
   background: ${(props) => props.theme.colors.global.backgroundPrimary};
   box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
   display: flex;
   height: 8vh;
+  max-height: 80px;
   min-height: 65px;
   justify-content: center;
   position: sticky;
@@ -66,7 +19,7 @@ const HeaderContainer = styled.header`
 `;
 
 // Styled: HeaderWrapper
-const HeaderWrapper = styled.div`
+export const HeaderWrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -79,20 +32,20 @@ const HeaderWrapper = styled.div`
 `;
 
 // Styled: HeaderLeft
-const HeaderLeft = styled.div`
+export const HeaderLeft = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-evenly;
 `;
 
 // Styled: HeaderToggleScale
-const HeaderToggleScale = styled.div`
+export const HeaderToggleScale = styled.div`
   transform: scale(0.65);
   -webkit-tap-highlight-color: transparent;
 `;
 
 // Styled: HeaderToggleLight
-const HeaderToggleLight = styled.span`
+export const HeaderToggleLight = styled.span`
   color: ${(props) => props.theme.colors.global.textSecondary};
   letter-spacing: 1px;
   margin-right: 10px;
@@ -105,7 +58,7 @@ const HeaderToggleLight = styled.span`
 `;
 
 // Styled: HeaderToggleDark
-const HeaderToggleDark = styled.span`
+export const HeaderToggleDark = styled.span`
   color: ${(props) => props.theme.colors.global.textSecondary};
   letter-spacing: 1px;
   margin-left: 10px;
@@ -113,14 +66,14 @@ const HeaderToggleDark = styled.span`
 `;
 
 // Styled: HeaderCenter
-const HeaderCenter = styled.div`
+export const HeaderCenter = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
 `;
 
 // Styled: HeaderRight
-const HeaderRight = styled.div`
+export const HeaderRight = styled.div`
   display: flex;
 
   & .MuiButtonBase-root {

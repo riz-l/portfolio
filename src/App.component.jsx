@@ -8,15 +8,15 @@ import lightTheme from "./themes/lightTheme";
 import darkTheme from "./themes/darkTheme";
 
 // Import: UI
-import Header from "./components/UI/Header/Header.component";
-import NavigationMenu from "./components/UI/NavigationMenu/NavigationMenu.component";
-import Footer from "./components/UI/Footer/Footer.component";
+import Header from "./components/Header/Header.component";
+import NavigationMenu from "./components/NavigationMenu/NavigationMenu.component";
+import Footer from "./components/Footer/Footer.component";
 
 // Import: page
-import Home from "./components/pages/Home/Home.component";
-import Portfolio from "./components/pages/Portfolio/Portfolio.component";
-import About from "./components/pages/About/About.component";
-import Contact from "./components/pages/Contact/Contact.component";
+import Home from "./pages/Home/Home.component";
+import Portfolio from "./pages/Portfolio/Portfolio.component";
+import About from "./pages/About/About.component";
+import Contact from "./pages/Contact/Contact.component";
 
 // Component: App
 function App() {
@@ -75,9 +75,15 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
         </Switch>
 
         <Footer />

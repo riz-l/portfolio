@@ -1,23 +1,5 @@
 // Import: Dependencies
-import React from "react";
 import styled, { keyframes } from "styled-components";
-
-// UI: GalleryCard
-function GalleryCard({ cardImage, cardText, cardTitle }) {
-  return (
-    <GalleryCardContainer
-      style={{ backgroundImage: `url(${cardImage})` }}
-      title={cardTitle}
-    >
-      <GalleryCardTextContainer>
-        <GalleryCardText>{cardText}</GalleryCardText>
-      </GalleryCardTextContainer>
-    </GalleryCardContainer>
-  );
-}
-
-// Export: GalleryCard
-export default GalleryCard;
 
 // Styled: galleryCardFadeIn
 const galleryCardFadeIn = keyframes`
@@ -26,7 +8,7 @@ const galleryCardFadeIn = keyframes`
 `;
 
 // Styled: GalleryCardContainer
-const GalleryCardContainer = styled.div`
+export const GalleryCardContainer = styled.div`
   animation-duration: 1.5s;
   animation-name: ${galleryCardFadeIn};
   animation-iteration-count: 1;
@@ -43,16 +25,15 @@ const GalleryCardContainer = styled.div`
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    box-shadow: 0 10px 8px -9px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 11px 8px -9px rgba(0, 0, 0, 0.35);
     filter: brightness(100%) saturate(100%);
     transform: translateY(-6px);
     transition: all 300ms ease-in-out;
-    box-shadow: 0 11px 8px -9px rgba(0, 0, 0, 0.35);
   }
 `;
 
 // Styled: GalleryCardTextContainer
-const GalleryCardTextContainer = styled.div`
+export const GalleryCardTextContainer = styled.div`
   align-items: flex-end;
   display: flex;
   height: 100%;
@@ -65,7 +46,7 @@ const GalleryCardTextContainer = styled.div`
 `;
 
 // Styled: GalleryCardText
-const GalleryCardText = styled.p`
+export const GalleryCardText = styled.p`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
   color: ${(props) => props.theme.colors.global.textPrimary};
   cursor: pointer;
