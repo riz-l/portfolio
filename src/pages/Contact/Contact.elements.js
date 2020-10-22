@@ -137,3 +137,10 @@ export const ContactIconContainer = styled.div`
     }
   }
 `;
+
+// Styled: ContactWrapper
+export const ContactWrapper = styled.div`
+  background: red !important;
+  width: 100%;
+  height: 100%;
+`;

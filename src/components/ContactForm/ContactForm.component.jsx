@@ -90,9 +90,9 @@ function ContactForm() {
           required
         />
 
-      <ContactFormInputSubmitContainer>
-      <ContactFormInputSubmit type="submit" value="Send Email" />
-      </ContactFormInputSubmitContainer>
+        <ContactFormInputSubmitContainer>
+          <ContactFormInputSubmit type="submit" value="Send Email" />
+        </ContactFormInputSubmitContainer>
       </ContactFormForm>
     </ContactFormContainer>
   );

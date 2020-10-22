@@ -4,10 +4,7 @@ import { Container, Wrapper } from "../../globalComponents";
 import HelpIcon from "@material-ui/icons/Help";
 
 // Import: Data
-import {
-  contactObjOne,
-} from "./contactData";
-
+import { contactObjOne } from "./contactData";
 
 // Import: Styled Components
 import {
@@ -18,6 +15,7 @@ import {
   ContactSplashRight,
   ContactIconContainer,
   ContactFormWrapper,
+  ContactWrapper,
 } from "./Contact.elements";
 
 // Import: Components
@@ -47,7 +45,9 @@ function Contact() {
         </ContactSplash>
       </ContactSplashContainer>
 
-      <ContentSection {...contactObjOne} />
+      <ContactWrapper>
+        <ContentSection {...contactObjOne} />
+      </ContactWrapper>
 
       <ContactFormWrapper>
         <Container>

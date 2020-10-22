@@ -43,6 +43,10 @@ export const ContactFormInput = styled.input`
   box-sizing: border-box;
   color: #292929;
   display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1rem;
   padding: 0.8rem 0;
   text-indent: 1rem;
   transition: all 150ms linear;
@@ -53,6 +57,20 @@ export const ContactFormInput = styled.input`
       ${(props) => props.theme.colors.global.highlightPrimary};
     outline: none !important;
     transition: all 150ms linear;
+
+    &::placeholder {
+      color: transparent;
+      display: none;
+      transition: all 150ms linear;
+      visibility: hidden;
+    }
+  }
+
+  &::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    font-size: 1rem;
   }
 `;
 
@@ -66,6 +84,7 @@ export const ContactFormTextArea = styled.textarea`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  font-size: 1rem;
   height: 400px;
   padding: 1rem;
   margin-top: 10px 0;
@@ -78,13 +97,20 @@ export const ContactFormTextArea = styled.textarea`
     outline: none !important;
     transition: all 150ms linear;
   }
+
+  &::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+  }
 `;
 
 // Styled: ContactFormInputSubmitContainer
 export const ContactFormInputSubmitContainer = styled.div`
-align-items: center;
-display: flex;
-justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 `;
 
 // Styled: ContactFormInputSubmit
@@ -101,7 +127,7 @@ export const ContactFormInputSubmit = styled.input`
   text-transform: uppercase;
   transition: background 150ms linear, color 150ms linear,
     border-radius 300ms linear;
-    width: 50%;
+  width: 50%;
 
   &:hover {
     color: ${(props) => props.theme.colors.global.highlightPrimary};
@@ -110,5 +136,4 @@ export const ContactFormInputSubmit = styled.input`
     transition: background 150ms linear, color 150ms linear,
       border-radius 300ms linear;
   }
-
 `;
