@@ -100,7 +100,7 @@ export const PortfolioSplashRight = styled.div`
 
   @media screen and (max-width: 1434px) {
     justify-content: center;
-    margin: 12rem 0;
+    margin: 6rem 0;
   }
 `;
 
