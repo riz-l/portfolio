@@ -1,5 +1,6 @@
 // Import: Dependencies
 import React, { useEffect } from "react";
+import InfoIcon from "@material-ui/icons/Info";
 
 // Import: Data
 import {
@@ -16,7 +17,7 @@ import {
   AboutSplash,
   AboutSplashLeft,
   AboutSplashRight,
-  AboutSplashImageContainer,
+  AboutIconContainer,
 } from "./About.elements";
 
 // Import: Components
@@ -39,12 +40,9 @@ function About() {
           </AboutSplashLeft>
 
           <AboutSplashRight>
-            <AboutSplashImageContainer>
-              <img
-                src="https://images.unsplash.com/photo-1544030622-5c2c58b1c463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80"
-                alt="A laptop and stationary on a wooden table"
-              />
-            </AboutSplashImageContainer>
+            <AboutIconContainer>
+              <InfoIcon />
+            </AboutIconContainer>
           </AboutSplashRight>
         </AboutSplash>
       </AboutSplashContainer>

@@ -1,5 +1,5 @@
 // Import: Dependencies
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // Styled: ContactContainer
 export const ContactContainer = styled.div`
@@ -96,27 +96,43 @@ export const ContactSplashRight = styled.div`
   }
 `;
 
-// Styled: ContactSplashImageContainer
-export const ContactSplashImageContainer = styled.div`
-  align-items: center;
-  display: flex;
-  height: 90%;
-  justify-content: center;
-  margin: auto;
-  width: 90%;
-  transition: all 150ms linear;
-
-  & img {
-    background: ${(props) => props.theme.colors.global.textPrimary};
-    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
-    margin: auto;
-    padding: 2rem;
-    width: 80%;
-    transition: all 150ms linear;
-  }
-`;
-
 // Styled: ContactFormWrapper
 export const ContactFormWrapper = styled.div`
   background: ${(props) => props.theme.colors.global.backgroundSecondary};
+`;
+
+// Styled: splashGradient
+const splashGradient = keyframes`
+    0% {background-position: 0 50%};
+    50% {background-position: 100% 50%};
+    100% {background-position: 0 50%};
+`;
+
+// Styled: ContactIconContainer
+export const ContactIconContainer = styled.div`
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+  & svg {
+    animation-duration: 10s;
+    animation-name: ${splashGradient};
+    animation-iteration-count: infinite;
+    background: ${(props) => props.theme.colors.global.backgroundSecondary};
+    background: linear-gradient(
+      -45deg,
+      ${(props) => props.theme.colors.homeGradient.gradientPrimary} 15%,
+      ${(props) => props.theme.colors.homeGradient.gradientSecondary},
+      ${(props) => props.theme.colors.homeGradient.gradientTertiary}
+    );
+    background-size: 400% 400%;
+    border-radius: 100%;
+    color: ${(props) => props.theme.colors.global.textPrimary};
+    font-size: 24rem;
+
+    @media screen and (max-width: 570px) {
+      font-size: 18rem;
+    }
+  }
 `;

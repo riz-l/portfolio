@@ -1,6 +1,7 @@
 // Import: Dependencies
 import React, { useEffect } from "react";
 import { Container, Wrapper } from "../../globalComponents";
+import HelpIcon from "@material-ui/icons/Help";
 
 // Import: Styled Components
 import {
@@ -9,7 +10,7 @@ import {
   ContactSplash,
   ContactSplashLeft,
   ContactSplashRight,
-  ContactSplashImageContainer,
+  ContactIconContainer,
   ContactFormWrapper,
 } from "./Contact.elements";
 
@@ -33,12 +34,9 @@ function Contact() {
           </ContactSplashLeft>
 
           <ContactSplashRight>
-            <ContactSplashImageContainer>
-              <img
-                src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=653&q=80"
-                alt="Old telephone hanging by cable"
-              />
-            </ContactSplashImageContainer>
+            <ContactIconContainer>
+              <HelpIcon />
+            </ContactIconContainer>
           </ContactSplashRight>
         </ContactSplash>
       </ContactSplashContainer>

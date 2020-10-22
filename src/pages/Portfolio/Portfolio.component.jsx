@@ -1,5 +1,6 @@
 // Import: Dependencies
 import React, { useEffect } from "react";
+import WhatshotIcon from "@material-ui/icons/Whatshot";
 
 // Import: Styled Components
 import {
@@ -8,7 +9,7 @@ import {
   PortfolioSplash,
   PortfolioSplashLeft,
   PortfolioSplashRight,
-  PortfolioSplashImageContainer,
+  PortfolioIconContainer,
 } from "./Portfolio.elements";
 
 // Page: Portfolio
@@ -28,12 +29,9 @@ function Portfolio() {
           </PortfolioSplashLeft>
 
           <PortfolioSplashRight>
-            <PortfolioSplashImageContainer>
-              <img
-                src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
-                alt="Old telephone hanging by cable"
-              />
-            </PortfolioSplashImageContainer>
+            <PortfolioIconContainer>
+              <WhatshotIcon />
+            </PortfolioIconContainer>
           </PortfolioSplashRight>
         </PortfolioSplash>
       </PortfolioSplashContainer>
