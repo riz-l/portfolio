@@ -80,9 +80,35 @@ export const ContactFormTextArea = styled.textarea`
   }
 `;
 
+// Styled: ContactFormInputSubmitContainer
+export const ContactFormInputSubmitContainer = styled.div`
+align-items: center;
+display: flex;
+justify-content: center;
+`;
+
 // Styled: ContactFormInputSubmit
 export const ContactFormInputSubmit = styled.input`
-  margin-top: 4rem;
-  padding: 1rem;
-  width: 50%;
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
+  border: none;
+  color: ${(props) => props.theme.colors.global.textPrimary};
+  cursor: pointer;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-top: 6rem;
+  padding: 1.4rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 150ms linear, color 150ms linear,
+    border-radius 300ms linear;
+    width: 50%;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.global.highlightPrimary};
+    background: ${(props) => props.theme.colors.global.backgroundPrimary};
+    border-radius: 80px;
+    transition: background 150ms linear, color 150ms linear,
+      border-radius 300ms linear;
+  }
+
 `;

@@ -10,6 +10,7 @@ import {
   ContactFormSpan,
   ContactFormInput,
   ContactFormTextArea,
+  ContactFormInputSubmitContainer,
   ContactFormInputSubmit,
 } from "./ContactForm.elements";
 
@@ -89,7 +90,9 @@ function ContactForm() {
           required
         />
 
-        <ContactFormInputSubmit type="submit" value="Send" />
+      <ContactFormInputSubmitContainer>
+      <ContactFormInputSubmit type="submit" value="Send Email" />
+      </ContactFormInputSubmitContainer>
       </ContactFormForm>
     </ContactFormContainer>
   );
