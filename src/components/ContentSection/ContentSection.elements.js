@@ -14,11 +14,13 @@ export const ContentSectionContainer = styled.section`
 
 // Styled: ContentSectionWrapper
 export const ContentSectionWrapper = styled.div`
-  align-items: ${({isHeadingAtStart}) => isHeadingAtStart ? "flex-start" : "flex-end"};
+  align-items: ${({ isHeadingAtStart }) =>
+    isHeadingAtStart ? "flex-start" : "flex-end"};
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: ${({isHeadingAtStart}) => isHeadingAtStart ? "left" : "right"};
+  text-align: ${({ isHeadingAtStart }) =>
+    isHeadingAtStart ? "left" : "right"};
 
   @media screen and (max-width: 1024px) {
     align-items: flex-start;
@@ -55,7 +57,8 @@ export const ContentSectionWrapper = styled.div`
     font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: 2px;
-    margin-top: ${(subHeadingOneLead, subHeadingTwoLead) => subHeadingOneLead || subHeadingTwoLead ? "1rem" : null};
+    margin-top: ${(subHeadingOneLead, subHeadingTwoLead) =>
+      subHeadingOneLead || subHeadingTwoLead ? "1rem" : null};
     margin-bottom: ${(subHeadingOneLead) =>
       subHeadingOneLead ? "1rem" : null};
     text-transform: uppercase;

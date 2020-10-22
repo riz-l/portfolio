@@ -1,8 +1,25 @@
 // Import: Dependencies
 import React, { useEffect } from "react";
+import { Container, Wrapper } from "../../globalComponents";
+import HelpIcon from "@material-ui/icons/Help";
+
+// Import: Data
+import { contactObjOne } from "./contactData";
 
 // Import: Styled Components
-import { ContactContainer, ContactSplash } from "./Contact.elements";
+import {
+  ContactContainer,
+  ContactSplashContainer,
+  ContactSplash,
+  ContactSplashLeft,
+  ContactSplashRight,
+  ContactIconContainer,
+  ContactFormWrapper,
+  ContactWrapper,
+} from "./Contact.elements";
+
+// Import: Components
+import { ContactForm, ContentSection } from "../../components";
 
 // Page: Contact
 function Contact() {
@@ -13,7 +30,32 @@ function Contact() {
 
   return (
     <ContactContainer>
-      <ContactSplash></ContactSplash>
+      <ContactSplashContainer>
+        <ContactSplash>
+          <ContactSplashLeft>
+            <h1>Contact</h1>
+            <h2>Get in touch</h2>
+          </ContactSplashLeft>
+
+          <ContactSplashRight>
+            <ContactIconContainer>
+              <HelpIcon />
+            </ContactIconContainer>
+          </ContactSplashRight>
+        </ContactSplash>
+      </ContactSplashContainer>
+
+      <ContactWrapper>
+        <ContentSection {...contactObjOne} />
+      </ContactWrapper>
+
+      <ContactFormWrapper>
+        <Container>
+          <Wrapper>
+            <ContactForm />
+          </Wrapper>
+        </Container>
+      </ContactFormWrapper>
     </ContactContainer>
   );
 }

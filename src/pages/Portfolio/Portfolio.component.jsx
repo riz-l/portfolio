@@ -1,8 +1,16 @@
 // Import: Dependencies
 import React, { useEffect } from "react";
+import WhatshotIcon from "@material-ui/icons/Whatshot";
 
 // Import: Styled Components
-import { PortfolioContainer, PortfolioSplash } from "./Portfolio.elements";
+import {
+  PortfolioContainer,
+  PortfolioSplashContainer,
+  PortfolioSplash,
+  PortfolioSplashLeft,
+  PortfolioSplashRight,
+  PortfolioIconContainer,
+} from "./Portfolio.elements";
 
 // Page: Portfolio
 function Portfolio() {
@@ -13,7 +21,20 @@ function Portfolio() {
 
   return (
     <PortfolioContainer>
-      <PortfolioSplash></PortfolioSplash>
+      <PortfolioSplashContainer>
+        <PortfolioSplash>
+          <PortfolioSplashLeft>
+            <h1>Portfolio</h1>
+            <h2>My work</h2>
+          </PortfolioSplashLeft>
+
+          <PortfolioSplashRight>
+            <PortfolioIconContainer>
+              <WhatshotIcon />
+            </PortfolioIconContainer>
+          </PortfolioSplashRight>
+        </PortfolioSplash>
+      </PortfolioSplashContainer>
     </PortfolioContainer>
   );
 }
