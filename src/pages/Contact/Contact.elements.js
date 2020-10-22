@@ -128,8 +128,9 @@ export const ContactIconContainer = styled.div`
     );
     background-size: 400% 400%;
     border-radius: 100%;
-    color: ${(props) => props.theme.colors.global.textPrimary};
+    color: ${(props) => props.theme.colors.global.backgroundPrimary};
     font-size: 24rem;
+    transition: all 150ms linear;
 
     @media screen and (max-width: 570px) {
       font-size: 18rem;
