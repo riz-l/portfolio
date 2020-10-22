@@ -122,12 +122,11 @@ export const ContactFormInputSubmit = styled.input`
   font-size: 1.4rem;
   letter-spacing: 1px;
   margin-top: 6rem;
-  padding: 1.4rem 2rem;
+  padding: 1.4rem 4rem;
   text-align: center;
   text-transform: uppercase;
   transition: background 150ms linear, color 150ms linear,
     border-radius 300ms linear;
-  width: 50%;
 
   &:hover {
     color: ${(props) => props.theme.colors.global.highlightPrimary};
