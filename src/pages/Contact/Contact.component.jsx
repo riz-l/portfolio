@@ -3,6 +3,12 @@ import React, { useEffect } from "react";
 import { Container, Wrapper } from "../../globalComponents";
 import HelpIcon from "@material-ui/icons/Help";
 
+// Import: Data
+import {
+  contactObjOne,
+} from "./contactData";
+
+
 // Import: Styled Components
 import {
   ContactContainer,
@@ -15,7 +21,7 @@ import {
 } from "./Contact.elements";
 
 // Import: Components
-import { ContactForm } from "../../components";
+import { ContactForm, ContentSection } from "../../components";
 
 // Page: Contact
 function Contact() {
@@ -40,6 +46,8 @@ function Contact() {
           </ContactSplashRight>
         </ContactSplash>
       </ContactSplashContainer>
+
+      <ContentSection {...contactObjOne} />
 
       <ContactFormWrapper>
         <Container>

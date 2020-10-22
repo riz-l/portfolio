@@ -105,7 +105,8 @@ function Footer() {
               <h5>Contact</h5>
             </Link>
             <ul>
-              <li>Get In Touch</li>
+              <li>Reach Out</li>
+              <li>Contact Form</li>
             </ul>
           </FooterNavigationLinks>
         </FooterNavigation>

@@ -98,7 +98,7 @@ export const ContactSplashRight = styled.div`
 
 // Styled: ContactFormWrapper
 export const ContactFormWrapper = styled.div`
-  background: ${(props) => props.theme.colors.global.backgroundSecondary};
+  background: ${(props) => props.theme.colors.global.backgroundPrimary};
 `;
 
 // Styled: splashGradient

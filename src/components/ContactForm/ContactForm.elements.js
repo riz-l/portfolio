@@ -28,7 +28,7 @@ export const ContactFormLabel = styled.label`
   color: ${(props) => props.theme.colors.global.textSecondary};
   font-size: 1.4rem;
   line-height: 2.4rem;
-  margin: 1rem 0 10px 0;
+  margin: 2rem 0 10px 0;
 `;
 
 // Styled: ContactFormSpan
@@ -89,7 +89,7 @@ justify-content: center;
 
 // Styled: ContactFormInputSubmit
 export const ContactFormInputSubmit = styled.input`
-  background: ${(props) => props.theme.colors.global.backgroundPrimary};
+  background: ${(props) => props.theme.colors.global.backgroundSecondary};
   border: none;
   color: ${(props) => props.theme.colors.global.textPrimary};
   cursor: pointer;
@@ -105,7 +105,7 @@ export const ContactFormInputSubmit = styled.input`
 
   &:hover {
     color: ${(props) => props.theme.colors.global.highlightPrimary};
-    background: ${(props) => props.theme.colors.global.backgroundPrimary};
+    background: ${(props) => props.theme.colors.global.backgroundSecondary};
     border-radius: 80px;
     transition: background 150ms linear, color 150ms linear,
       border-radius 300ms linear;
