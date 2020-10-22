@@ -75,7 +75,7 @@ function ContactForm() {
           Subject<ContactFormSpan>*</ContactFormSpan>
         </ContactFormLabel>
         <ContactFormInput
-          type="tel"
+          type="text"
           placeholder="Subject"
           name="message_subject"
           required
