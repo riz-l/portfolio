@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 // Import: Styling
-import "./index.styles.scss";
+import "./index.styles.css";
 
 // Import: Components
 import App from "./App.component";
